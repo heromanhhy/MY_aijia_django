@@ -1,0 +1,9 @@
+redis数据库
+
+启动：redis-server.exe
+客户端：redis-cli
+查找数据库：select 1  (0,15)
+查询值: keys *
+清除所有的keys:flushdb
+查询值是否存在：EXISTS key
+?P<value>的意思就是命名一个名字为value的组，匹配规则符合后面的/d+

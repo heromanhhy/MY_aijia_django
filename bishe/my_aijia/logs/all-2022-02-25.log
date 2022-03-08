@@ -1,0 +1,470 @@
+[2022-02-25 19:29:20,609] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 19:29:46,605] [log.py:230] [log:log_response] [WARNING]- Not Found: /
+[2022-02-25 19:29:46,607] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2167
+[2022-02-25 19:29:46,811] [log.py:230] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2022-02-25 19:29:46,814] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2218
+[2022-02-25 19:29:59,565] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 18350
+[2022-02-25 19:29:59,591] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-02-25 19:29:59,593] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6210
+[2022-02-25 19:29:59,594] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-02-25 19:29:59,596] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-02-25 19:29:59,599] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 10521
+[2022-02-25 19:29:59,600] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-02-25 19:30:01,026] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-02-25 19:30:01,144] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-02-25 19:30:01,316] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 200 4286
+[2022-02-25 19:30:29,206] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-02-25 19:30:29,215] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-02-25 19:55:03,123] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 19:55:04,101] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 19:55:25,340] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 19:55:26,345] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 20:41:44,938] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 20:41:45,983] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 20:42:54,387] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 20:42:55,438] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 20:43:46,603] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 20:43:47,625] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 20:44:13,464] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 20:44:14,698] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 20:44:26,728] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 20:44:27,702] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 20:44:33,408] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 20:44:34,625] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 20:45:24,530] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 20:45:25,484] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 20:45:54,296] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 20:45:55,805] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 20:46:04,557] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 20:46:06,007] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 20:47:16,480] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 20:47:17,777] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 20:51:46,961] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\forms.py changed, reloading.
+[2022-02-25 20:51:47,921] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 20:52:05,526] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 20:52:06,508] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 20:53:20,247] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 20:53:21,262] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 20:54:52,202] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\forms.py changed, reloading.
+[2022-02-25 20:54:53,289] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 20:55:20,760] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 20:55:21,881] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 20:59:01,914] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 20:59:03,021] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 20:59:39,522] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 20:59:40,677] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:13:10,659] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:13:11,653] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:14:26,459] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:14:27,436] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:14:37,327] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:14:38,360] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:17:31,941] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:17:33,058] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:21:07,713] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:21:08,694] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:22:37,256] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:22:38,338] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:23:52,167] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-25 21:23:53,275] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:24:25,195] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-25 21:24:26,240] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:26:12,012] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:26:13,458] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:28:44,413] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:28:45,456] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:29:18,038] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-25 21:29:19,155] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:31:09,052] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-25 21:31:10,216] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:34:28,487] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:34:29,620] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:35:55,954] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:35:56,980] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:38:05,143] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:38:06,167] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:40:59,786] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:41:01,014] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:43:13,485] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:43:14,555] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:43:49,464] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:43:50,434] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:44:37,104] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:44:38,198] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:45:02,011] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\forms.py changed, reloading.
+[2022-02-25 21:45:03,520] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:45:10,371] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:45:11,630] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:46:15,076] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:46:16,090] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:47:12,862] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:47:14,063] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:49:44,280] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:49:45,329] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:53:29,807] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:53:30,885] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:53:59,227] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 21:54:00,312] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:56:11,973] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-25 21:56:13,159] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 21:56:57,275] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-25 21:56:58,282] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 22:01:50,692] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-25 22:01:51,742] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 22:04:53,295] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 22:04:54,536] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 22:06:13,853] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 22:06:14,917] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 22:07:42,521] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 22:07:43,505] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 22:09:23,252] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 22:09:24,270] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 22:10:26,395] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 22:10:27,566] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 22:11:13,174] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 22:11:14,401] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 22:12:19,007] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 22:12:20,601] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 22:12:43,450] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 22:12:44,808] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 22:16:56,265] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 22:16:57,286] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 22:17:05,460] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-25 22:17:06,737] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 22:17:39,037] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 22:17:40,143] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 22:17:42,910] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-25 22:17:43,887] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 22:18:37,200] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 22:18:38,279] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 22:29:38,202] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-25 22:29:39,289] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 22:30:21,602] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 22:30:22,737] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 22:30:41,261] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 22:30:42,516] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 22:31:28,370] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 22:31:29,714] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 22:31:48,716] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 22:31:49,881] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 23:18:48,963] [log.py:230] [log:log_response] [WARNING]- Forbidden (CSRF cookie not set.): /users/register/
+[2022-02-25 23:18:48,964] [basehttp.py:161] [basehttp:log_message] [WARNING]- "POST /users/register/ HTTP/1.1" 403 2801
+[2022-02-25 23:19:41,158] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\dev.py changed, reloading.
+[2022-02-25 23:19:42,471] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 23:19:57,667] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view users.views.RegisterView didn't return an HttpResponse object. It returned None instead.
+[2022-02-25 23:19:57,671] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 67713
+[2022-02-25 23:23:58,236] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 23:23:59,399] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 23:25:03,414] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 18431
+[2022-02-25 23:25:04,290] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 18431
+[2022-02-25 23:25:04,940] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 18431
+[2022-02-25 23:25:19,736] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view users.views.RegisterView didn't return an HttpResponse object. It returned None instead.
+[2022-02-25 23:25:19,739] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 68009
+[2022-02-25 23:27:44,701] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 23:27:45,866] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 23:30:18,325] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 23:30:19,352] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 23:31:02,767] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 23:31:03,832] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 23:31:14,106] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 23:31:15,252] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 23:32:09,159] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\forms.py changed, reloading.
+[2022-02-25 23:32:10,230] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 23:32:31,779] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\forms.py changed, reloading.
+[2022-02-25 23:32:32,719] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 23:33:10,247] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 18431
+[2022-02-25 23:34:41,998] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 23:34:43,045] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 23:34:52,264] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 18431
+[2022-02-25 23:37:27,373] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 18431
+[2022-02-25 23:38:46,245] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view users.views.RegisterView didn't return an HttpResponse object. It returned None instead.
+[2022-02-25 23:38:46,251] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 67878
+[2022-02-25 23:38:55,835] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view users.views.RegisterView didn't return an HttpResponse object. It returned None instead.
+[2022-02-25 23:38:55,838] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 67877
+[2022-02-25 23:39:45,587] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 18431
+[2022-02-25 23:40:42,825] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 23:40:43,747] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 23:41:32,834] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\forms.py changed, reloading.
+[2022-02-25 23:41:33,773] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 23:42:40,630] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\forms.py changed, reloading.
+[2022-02-25 23:42:41,976] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 23:43:05,109] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 23:43:06,402] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 23:43:08,502] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 18431
+[2022-02-25 23:43:57,974] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 18431
+[2022-02-25 23:44:31,193] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view users.views.RegisterView didn't return an HttpResponse object. It returned None instead.
+[2022-02-25 23:44:31,199] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 67878
+[2022-02-25 23:44:46,040] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view users.views.RegisterView didn't return an HttpResponse object. It returned None instead.
+[2022-02-25 23:44:46,043] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 67877
+[2022-02-25 23:44:50,195] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view users.views.RegisterView didn't return an HttpResponse object. It returned None instead.
+[2022-02-25 23:44:50,200] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 67877
+[2022-02-25 23:44:51,102] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view users.views.RegisterView didn't return an HttpResponse object. It returned None instead.
+[2022-02-25 23:44:51,106] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 67877
+[2022-02-25 23:45:23,349] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 18431
+[2022-02-25 23:45:24,219] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 18431
+[2022-02-25 23:48:59,428] [basehttp.py:75] [basehttp:handle_error] [INFO]- - Broken pipe from ('127.0.0.1', 57024)
+
+[2022-02-25 23:55:22,550] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-25 23:55:23,627] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 23:56:03,250] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 23:56:04,206] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 23:57:40,623] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-02-25 23:57:41,573] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-25 23:58:33,220] [log.py:230] [log:log_response] [WARNING]- Not Found: /
+[2022-02-25 23:58:33,222] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2167
+[2022-02-25 23:58:44,362] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 18431
+[2022-02-25 23:58:45,423] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-02-25 23:58:45,855] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-02-25 23:58:55,140] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view users.views.RegisterView didn't return an HttpResponse object. It returned None instead.
+[2022-02-25 23:58:55,143] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 67284
+[2022-02-26 00:01:46,852] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 36
+[2022-02-26 21:47:55,324] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 18505
+[2022-02-26 21:47:55,603] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 304 0
+[2022-02-26 21:54:30,072] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-02-26 21:54:30,082] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-02-26 22:28:51,914] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\template\defaulttags.py", line 1034, in find_library
+    return parser.libraries[name]
+KeyError: 'templates'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 11, in get
+    return render(request, 'register.html')
+  File "D:\Python37\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Python37\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Python37\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Python37\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Python37\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Python37\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Python37\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Python37\lib\site-packages\django\template\defaulttags.py", line 1091, in load
+    lib = find_library(parser, name)
+  File "D:\Python37\lib\site-packages\django\template\defaulttags.py", line 1038, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'templates' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+[2022-02-26 22:28:51,946] [basehttp.py:161] [basehttp:log_message] [ERROR]- "GET /users/register/ HTTP/1.1" 500 156449
+[2022-02-26 22:28:53,636] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\template\defaulttags.py", line 1034, in find_library
+    return parser.libraries[name]
+KeyError: 'templates'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 11, in get
+    return render(request, 'register.html')
+  File "D:\Python37\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Python37\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Python37\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Python37\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Python37\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Python37\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Python37\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Python37\lib\site-packages\django\template\defaulttags.py", line 1091, in load
+    lib = find_library(parser, name)
+  File "D:\Python37\lib\site-packages\django\template\defaulttags.py", line 1038, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'templates' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+[2022-02-26 22:28:53,654] [basehttp.py:161] [basehttp:log_message] [ERROR]- "GET /users/register/ HTTP/1.1" 500 156449
+[2022-02-26 22:28:54,824] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\template\defaulttags.py", line 1034, in find_library
+    return parser.libraries[name]
+KeyError: 'templates'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 11, in get
+    return render(request, 'register.html')
+  File "D:\Python37\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Python37\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Python37\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Python37\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Python37\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Python37\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Python37\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Python37\lib\site-packages\django\template\defaulttags.py", line 1091, in load
+    lib = find_library(parser, name)
+  File "D:\Python37\lib\site-packages\django\template\defaulttags.py", line 1038, in find_library
+    name, "\n".join(sorted(parser.libraries)),
+django.template.exceptions.TemplateSyntaxError: 'templates' is not a registered tag library. Must be one of:
+admin_list
+admin_modify
+admin_urls
+cache
+i18n
+l10n
+log
+static
+tz
+[2022-02-26 22:28:54,842] [basehttp.py:161] [basehttp:log_message] [ERROR]- "GET /users/register/ HTTP/1.1" 500 156449
+[2022-02-26 22:31:15,439] [log.py:230] [log:log_response] [WARNING]- Not Found: /
+[2022-02-26 22:31:15,442] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2167
+[2022-02-26 22:31:18,130] [log.py:230] [log:log_response] [WARNING]- Not Found: /
+[2022-02-26 22:31:18,131] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2167
+[2022-02-26 22:31:18,971] [log.py:230] [log:log_response] [WARNING]- Not Found: /
+[2022-02-26 22:31:18,973] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2167

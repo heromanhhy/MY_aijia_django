@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* 图标样式引入 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/fonts/icomoon.eot?rretjt');
+    src: url('../fonts/fonts/icomoon.eot?#iefixrretjt') format('embedded-opentype'),
+        url('../fonts/fonts/icomoon.woff?rretjt') format('woff'),
+        url('../fonts/fonts/icomoon.ttf?rretjt') format('truetype'),
+        url('../fonts/fonts/icomoon.svg?rretjt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 用户找回密码css */
+
+.login-form{
+	width: 560px;
+	height: 520px;
+	margin: 0 auto;
+	
+}
+.login-form form p:last-child{
+	font-size: 16px;
+}
+.footer_container_top1 p i{
+	font-family: 'icomoon';
+	font-size: 17px;
+	color: rgb(235, 39, 39);
+}
+/* 用户登入css */
+html,
+body {
+	height: 100%;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+* {
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+
+img {
+	display: block;
+}
+
+.clearfix {
+	clear: both;
+}
+.other_ifo{
+	margin-top: 10px;
+}
+.bgbox {
+	background: #fff url(../img/login/bg1.jpg) no-repeat center center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.container .leftbox,
+.container .rightbox {
+	float: left;
+	width: 320px;
+	height: 340px;
+	box-sizing: border-box;
+	padding: 30px;
+}
+
+.container .rightbox {
+	padding-top: 40px;
+}
+
+.container .leftbox {
+	background: url(../img/login/bg2.jpg) center center;
+	background-size: cover;
+}
+
+.container .leftbox img {
+	width: 100px;
+	margin: 60px auto -10px;
+}
+
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -320px;
+	margin-top: -180px;
+	width: 640px;
+	background-color: #fff;
+	z-index: 9;
+	box-shadow: 0px 10px 30px rgba(8, 70, 116, 0.3);
+}
+
+.container h3 {
+	color: #fff;
+	font-size: 20px;
+	line-height: 60px;
+	text-align: center;
+}
+
+.copyright {
+	font-size: 12px;
+	padding-bottom: 26px;
+	text-align: center;
+	color: #fff;
+	margin-top: 70px;
+}
+
+.copyright a {
+	color: #dcedff;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.copyright .a2 {
+	margin-left: 10px;
+}
+
+.inputbox {
+	line-height: 40px;
+	border-bottom: 1px solid #eee;
+	padding-left: 40px;
+	margin-bottom: 20px;
+	position: relative;
+}
+
+input {
+	outline: none;
+	border: none;
+	font-family: sans-serif;
+	text-indent: 10px;
+	width: 100%;
+}
+
+.inputbox img {
+	height: 20px;
+	position: absolute;
+	left: 3px;
+	top: 10px;
+}
+
+.yzmbox {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+#code_input {
+	border-bottom: 1px solid #eee;
+	width: 160px;
+	margin-right: 10px;
+	line-height: 40px;
+	box-sizing: border-box;
+}
+
+#my_button {
+	width: 100%;
+	line-height: 40px;
+	background-color: #34aaff;
+	color: #fff;
+	outline: none;
+	border: none;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	border-radius: 20px;
+	cursor: pointer;
+}
+
+input::-webkit-input-placeholder {
+	color: #bbb;
+}
+
+input::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #bbb;
+}
+
+input:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #bbb;
+}
+
+input:-ms-input-placeholder {
+	/* Internet Explorer 10-11 */
+	color: #bbb;
+}

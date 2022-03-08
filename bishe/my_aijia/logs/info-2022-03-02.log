@@ -1,0 +1,591 @@
+[2022-03-02 19:57:31,522] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 19:57:34,471] [log.py:230] [log:log_response] [WARNING]- Not Found: /
+[2022-03-02 19:57:34,472] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET / HTTP/1.1" 404 2334
+[2022-03-02 19:57:34,657] [log.py:230] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2022-03-02 19:57:34,658] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2385
+[2022-03-02 19:57:42,233] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20427
+[2022-03-02 19:57:42,261] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 19:57:42,263] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 19:57:42,265] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 19:57:42,267] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 10854
+[2022-03-02 19:57:42,269] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 19:57:42,271] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 19:57:43,291] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 19:57:43,416] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-03-02 19:57:43,619] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 200 4286
+[2022-03-02 20:00:10,171] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-03-02 20:00:11,223] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 20:00:40,567] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-03-02 20:00:41,725] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 20:25:20,575] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20427
+[2022-03-02 20:25:23,648] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-02 20:25:23,672] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-03-02 20:25:46,954] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/hidePwd.png HTTP/1.1" 200 386
+[2022-03-02 20:26:08,272] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20074
+[2022-03-02 20:27:43,557] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 39, in post
+    login(request, user)
+  File "D:\Python37\lib\site-packages\django\contrib\auth\__init__.py", line 111, in login
+    request.session.cycle_key()
+  File "D:\Python37\lib\site-packages\django\contrib\sessions\backends\base.py", line 344, in cycle_key
+    self.create()
+  File "D:\Python37\lib\site-packages\django\contrib\sessions\backends\cache.py", line 43, in create
+    self._session_key = self._get_new_session_key()
+  File "D:\Python37\lib\site-packages\django\contrib\sessions\backends\base.py", line 196, in _get_new_session_key
+    if not self.exists(session_key):
+  File "D:\Python37\lib\site-packages\django\contrib\sessions\backends\cache.py", line 70, in exists
+    return bool(session_key) and (self.cache_key_prefix + session_key) in self._cache
+  File "D:\Python37\lib\site-packages\django\core\cache\backends\base.py", line 212, in __contains__
+    return self.has_key(key)
+  File "D:\Python37\lib\site-packages\django_redis\cache.py", line 25, in _decorator
+    return method(self, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django_redis\cache.py", line 113, in has_key
+    return self.client.has_key(*args, **kwargs)
+  File "D:\Python37\lib\site-packages\django_redis\client\default.py", line 411, in has_key
+    return client.exists(key)
+  File "D:\Python37\lib\site-packages\redis\commands\core.py", line 1201, in exists
+    return self.execute_command("EXISTS", *names)
+  File "D:\Python37\lib\site-packages\redis\client.py", line 1180, in execute_command
+    lambda error: self._disconnect_raise(conn, error),
+  File "D:\Python37\lib\site-packages\redis\retry.py", line 45, in call_with_retry
+    return do()
+  File "D:\Python37\lib\site-packages\redis\client.py", line 1178, in <lambda>
+    conn, command_name, *args, **options
+  File "D:\Python37\lib\site-packages\redis\client.py", line 1152, in _send_command_parse_response
+    conn.send_command(*args)
+  File "D:\Python37\lib\site-packages\redis\connection.py", line 796, in send_command
+    self.pack_command(*args), check_health=kwargs.get("check_health", True)
+  File "D:\Python37\lib\site-packages\redis\connection.py", line 848, in pack_command
+    for arg in map(self.encoder.encode, args):
+  File "D:\Python37\lib\site-packages\redis\connection.py", line 111, in encode
+    f"Invalid input of type: '{typename}'. "
+redis.exceptions.DataError: Invalid input of type: 'CacheKey'. Convert to a bytes, string, int or float first.
+[2022-03-02 20:27:43,574] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 152444
+[2022-03-02 20:32:28,014] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 20:32:37,982] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20074
+[2022-03-02 20:32:38,156] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+[2022-03-02 20:33:50,474] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20074
+[2022-03-02 20:34:39,428] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+[2022-03-02 20:34:41,221] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 302 0
+[2022-03-02 20:34:41,230] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/login/ HTTP/1.1" 200 3974
+[2022-03-02 20:34:41,269] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/login.css HTTP/1.1" 200 3263
+[2022-03-02 20:34:41,272] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/logo.png HTTP/1.1" 200 4832
+[2022-03-02 20:34:41,347] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/login/gVerify.js HTTP/1.1" 200 4451
+[2022-03-02 20:34:41,353] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js HTTP/1.1" 200 39680
+[2022-03-02 20:34:41,353] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/login/hy.png HTTP/1.1" 200 1582
+[2022-03-02 20:34:41,355] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/login/layer-v3.5.1/layer.js HTTP/1.1" 200 36155
+[2022-03-02 20:34:41,356] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/login/suo.png HTTP/1.1" 200 1278
+[2022-03-02 20:34:41,381] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/login/bg2.jpg HTTP/1.1" 200 26904
+[2022-03-02 20:34:41,383] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/login/bg1.jpg HTTP/1.1" 200 40291
+[2022-03-02 20:34:41,418] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/login/layer-v3.5.1/theme/default/layer.css?v=3.5.1 HTTP/1.1" 200 14271
+[2022-03-02 20:48:54,315] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20516
+[2022-03-02 20:49:33,888] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20111
+[2022-03-02 20:52:25,350] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 302 0
+[2022-03-02 20:52:25,387] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/login/ HTTP/1.1" 200 3974
+[2022-03-02 20:54:20,968] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20088
+[2022-03-02 20:55:17,442] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 302 0
+[2022-03-02 20:55:17,468] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/login/ HTTP/1.1" 200 3974
+[2022-03-02 20:56:13,720] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/login/ HTTP/1.1" 200 3974
+[2022-03-02 20:56:13,755] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/logo.png HTTP/1.1" 200 4832
+[2022-03-02 20:56:13,756] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/login.css HTTP/1.1" 200 3263
+[2022-03-02 20:56:13,809] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js HTTP/1.1" 200 39680
+[2022-03-02 20:56:13,821] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/login/gVerify.js HTTP/1.1" 200 4451
+[2022-03-02 20:56:13,824] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/login/hy.png HTTP/1.1" 200 1582
+[2022-03-02 20:56:13,825] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/login/suo.png HTTP/1.1" 200 1278
+[2022-03-02 20:56:13,828] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 20:56:13,829] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/login/bg1.jpg HTTP/1.1" 200 40291
+[2022-03-02 20:56:13,834] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/login/bg2.jpg HTTP/1.1" 200 26904
+[2022-03-02 20:56:13,834] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/login/layer-v3.5.1/layer.js HTTP/1.1" 200 36155
+[2022-03-02 20:56:13,858] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/login/layer-v3.5.1/theme/default/layer.css?v=3.5.1 HTTP/1.1" 200 14271
+[2022-03-02 20:56:13,879] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 200 4286
+[2022-03-02 20:56:24,029] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 15, in get
+    return render(request, 'register.html')
+  File "D:\Python37\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Python37\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Python37\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Python37\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Python37\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Python37\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Python37\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 478, in parse
+    raise self.error(token, e)
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 476, in parse
+    compiled_result = compile_func(self, token)
+  File "D:\Python37\lib\site-packages\django\template\defaulttags.py", line 964, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+  File "D:\Python37\lib\site-packages\django\template\smartif.py", line 190, in parse
+    retval = self.expression()
+  File "D:\Python37\lib\site-packages\django\template\smartif.py", line 200, in expression
+    left = t.nud(self)
+  File "D:\Python37\lib\site-packages\django\template\smartif.py", line 77, in nud
+    self.first = parser.expression(bp)
+  File "D:\Python37\lib\site-packages\django\template\smartif.py", line 200, in expression
+    left = t.nud(self)
+  File "D:\Python37\lib\site-packages\django\template\smartif.py", line 23, in nud
+    "Not expecting '%s' in this position in if tag." % self.id
+django.template.exceptions.TemplateSyntaxError: Not expecting 'is' in this position in if tag.
+[2022-03-02 20:56:24,043] [basehttp.py:161] [basehttp:log_message] [ERROR]- "GET /users/register/ HTTP/1.1" 500 173345
+[2022-03-02 20:56:24,266] [log.py:230] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2022-03-02 20:56:24,268] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2385
+[2022-03-02 20:56:42,564] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20460
+[2022-03-02 20:56:46,806] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20460
+[2022-03-02 20:56:46,850] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 20:56:46,851] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 20:56:46,854] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 20:56:46,865] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 20:56:46,865] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 10854
+[2022-03-02 20:56:46,868] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 20:56:46,877] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 20:56:47,000] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-03-02 20:56:47,203] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 200 4286
+[2022-03-02 20:56:49,030] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-02 20:56:49,070] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-03-02 20:57:27,929] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 302 0
+[2022-03-02 20:57:27,956] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/login/ HTTP/1.1" 200 3974
+[2022-03-02 21:00:53,265] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/login/ HTTP/1.1" 200 3974
+[2022-03-02 21:00:53,304] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/logo.png HTTP/1.1" 200 4832
+[2022-03-02 21:00:53,304] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/login.css HTTP/1.1" 200 3263
+[2022-03-02 21:00:53,362] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/login/gVerify.js HTTP/1.1" 200 4451
+[2022-03-02 21:00:53,363] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/login/suo.png HTTP/1.1" 200 1278
+[2022-03-02 21:00:53,363] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/login/hy.png HTTP/1.1" 200 1582
+[2022-03-02 21:00:53,371] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/login/layer-v3.5.1/layer.js HTTP/1.1" 200 36155
+[2022-03-02 21:00:53,373] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/bootstrap.min.js HTTP/1.1" 200 39680
+[2022-03-02 21:00:53,374] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 21:00:53,376] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/login/bg1.jpg HTTP/1.1" 200 40291
+[2022-03-02 21:00:53,377] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/login/bg2.jpg HTTP/1.1" 200 26904
+[2022-03-02 21:00:53,399] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/login/layer-v3.5.1/theme/default/layer.css?v=3.5.1 HTTP/1.1" 200 14271
+[2022-03-02 21:00:53,425] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 200 4286
+[2022-03-02 21:00:57,867] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20486
+[2022-03-02 21:01:44,597] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20103
+[2022-03-02 21:02:57,970] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 302 0
+[2022-03-02 21:02:57,998] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/login/ HTTP/1.1" 200 3974
+[2022-03-02 21:05:36,600] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20487
+[2022-03-02 21:05:38,701] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20487
+[2022-03-02 21:05:38,738] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 21:05:38,739] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 21:05:38,741] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 21:05:38,755] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 21:05:38,756] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 10854
+[2022-03-02 21:05:38,758] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 21:05:38,768] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 21:05:38,851] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-03-02 21:05:39,046] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-02 21:05:39,066] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20487
+[2022-03-02 21:05:39,066] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 200 4286
+[2022-03-02 21:05:39,070] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-03-02 21:05:39,108] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20487
+[2022-03-02 21:05:39,148] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 21:05:39,150] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 21:05:39,152] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 21:05:39,170] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 21:05:39,170] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 10854
+[2022-03-02 21:05:39,173] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 21:05:39,181] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 21:05:39,255] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-02 21:05:39,271] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20487
+[2022-03-02 21:05:39,274] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-03-02 21:05:39,279] [basehttp.py:75] [basehttp:handle_error] [INFO]- - Broken pipe from ('127.0.0.1', 61003)
+
+[2022-03-02 21:05:39,310] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 21:05:39,310] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 21:05:39,314] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 21:05:39,332] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 21:05:39,333] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 10854
+[2022-03-02 21:05:39,335] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 21:05:39,343] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 21:05:39,433] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-03-02 21:05:39,437] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-02 21:05:39,671] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20487
+[2022-03-02 21:05:39,672] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-03-02 21:05:39,705] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 21:05:39,706] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 21:05:39,708] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 21:05:39,722] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 21:05:39,723] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 10854
+[2022-03-02 21:05:39,725] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 21:05:39,737] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 21:05:39,821] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-03-02 21:05:39,825] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-02 21:05:39,838] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20487
+[2022-03-02 21:05:40,064] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20487
+[2022-03-02 21:05:40,112] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 21:05:40,113] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 21:05:40,117] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 21:05:40,130] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 21:05:40,131] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 10854
+[2022-03-02 21:05:40,134] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 21:05:40,142] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 21:05:40,211] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-02 21:05:40,226] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20487
+[2022-03-02 21:05:40,233] [basehttp.py:75] [basehttp:handle_error] [INFO]- - Broken pipe from ('127.0.0.1', 60999)
+
+[2022-03-02 21:05:40,265] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 21:05:40,266] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 21:05:40,269] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 21:05:40,281] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 21:05:40,282] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 10854
+[2022-03-02 21:05:40,284] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 21:05:40,292] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 21:05:40,406] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-03-02 21:05:40,616] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 200 4286
+[2022-03-02 21:05:40,945] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-02 21:05:40,984] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-03-02 21:06:21,076] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20070
+[2022-03-02 21:09:50,675] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-03-02 21:09:51,702] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 21:09:59,451] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20070
+[2022-03-02 21:09:59,501] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 21:09:59,502] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 21:09:59,507] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 21:09:59,556] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 10854
+[2022-03-02 21:09:59,557] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 21:09:59,561] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 21:09:59,586] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 21:09:59,735] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-03-02 21:09:59,959] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 200 4286
+[2022-03-02 21:11:04,974] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-02 21:11:05,007] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-03-02 21:11:50,621] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 302 0
+[2022-03-02 21:11:50,657] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/login/ HTTP/1.1" 200 3974
+[2022-03-02 21:12:23,177] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-03-02 21:12:24,150] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 21:20:39,659] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-03-02 21:20:40,649] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 21:20:44,639] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20487
+[2022-03-02 21:21:17,927] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 302 0
+[2022-03-02 21:21:17,958] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/login/ HTTP/1.1" 200 3974
+[2022-03-02 21:28:33,621] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-03-02 21:28:34,618] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 21:29:44,315] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\urls.py changed, reloading.
+[2022-03-02 21:29:45,291] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 21:34:55,004] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\urls.py changed, reloading.
+[2022-03-02 21:34:56,088] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 21:37:13,135] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-03-02 21:37:14,289] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 21:42:13,145] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-03-02 21:42:14,107] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 21:46:00,085] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-03-02 21:46:01,048] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 21:47:21,811] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\urls.py changed, reloading.
+[2022-03-02 21:47:22,923] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 21:49:12,496] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-03-02 21:49:13,721] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 21:52:04,694] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\urls.py changed, reloading.
+[2022-03-02 21:52:05,962] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 21:54:54,784] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\urls.py changed, reloading.
+[2022-03-02 21:54:55,688] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 21:55:58,157] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\urls.py changed, reloading.
+[2022-03-02 21:55:59,522] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 21:56:11,068] [log.py:230] [log:log_response] [WARNING]- Not Found: /users/黄11/count/
+[2022-03-02 21:56:11,070] [basehttp.py:161] [basehttp:log_message] [WARNING]- "POST /users/%E9%BB%8411/count/ HTTP/1.1" 404 3064
+[2022-03-02 21:59:38,469] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\urls.py changed, reloading.
+[2022-03-02 21:59:39,516] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 22:00:30,183] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-03-02 22:00:31,204] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 22:00:34,230] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20487
+[2022-03-02 22:00:40,506] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20487
+[2022-03-02 22:00:40,549] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 22:00:40,549] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 22:00:40,552] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 22:00:40,567] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 22:00:40,568] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 10854
+[2022-03-02 22:00:40,571] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 22:00:40,579] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 22:00:40,663] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-03-02 22:00:40,862] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-02 22:00:40,872] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 200 4286
+[2022-03-02 22:00:40,886] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20487
+[2022-03-02 22:00:40,888] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-03-02 22:00:40,925] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 22:00:40,925] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 22:00:40,928] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 22:00:40,946] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 22:00:40,947] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 10854
+[2022-03-02 22:00:40,950] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 22:00:40,959] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 22:00:40,977] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20487
+[2022-03-02 22:00:40,995] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-02 22:00:40,998] [basehttp.py:75] [basehttp:handle_error] [INFO]- - Broken pipe from ('127.0.0.1', 65410)
+
+[2022-03-02 22:00:41,032] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 22:00:41,032] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 22:00:41,036] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 22:00:41,050] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 10854
+[2022-03-02 22:00:41,051] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 22:00:41,054] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 22:00:41,064] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 22:00:41,135] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-02 22:00:41,153] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20487
+[2022-03-02 22:00:41,154] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-03-02 22:00:41,159] [basehttp.py:75] [basehttp:handle_error] [INFO]- - Broken pipe from ('127.0.0.1', 65415)
+
+[2022-03-02 22:00:41,196] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 22:00:41,196] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 22:00:41,199] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 22:00:41,212] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 22:00:41,212] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 10854
+[2022-03-02 22:00:41,215] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 22:00:41,222] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 22:00:41,317] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-02 22:00:41,333] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20487
+[2022-03-02 22:00:41,339] [basehttp.py:75] [basehttp:handle_error] [INFO]- - Broken pipe from ('127.0.0.1', 65411)
+
+[2022-03-02 22:00:41,372] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 22:00:41,372] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 22:00:41,375] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 22:00:41,388] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 22:00:41,388] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 10854
+[2022-03-02 22:00:41,391] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 22:00:41,398] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 22:00:41,500] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-03-02 22:00:41,506] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-02 22:00:41,710] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20487
+[2022-03-02 22:00:41,712] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-03-02 22:00:41,745] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 22:00:41,746] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 22:00:41,748] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 22:00:41,762] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 22:00:41,763] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 10854
+[2022-03-02 22:00:41,765] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 22:00:41,773] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 22:00:41,876] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-03-02 22:00:42,070] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 200 4286
+[2022-03-02 22:00:42,253] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-02 22:00:42,297] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-03-02 22:01:21,634] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 302 0
+[2022-03-02 22:01:21,657] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/login/ HTTP/1.1" 200 3974
+[2022-03-02 22:01:57,163] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-03-02 22:01:58,272] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 22:02:39,154] [log.py:230] [log:log_response] [WARNING]- Forbidden (CSRF cookie not set.): /users/username/aijia/count/
+[2022-03-02 22:02:39,155] [basehttp.py:161] [basehttp:log_message] [WARNING]- "POST /users/username/aijia/count/ HTTP/1.1" 403 2801
+[2022-03-02 22:04:53,706] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\views.py changed, reloading.
+[2022-03-02 22:04:54,715] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-03-02 22:05:13,206] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/username/aijia/count/ HTTP/1.1" 200 41
+[2022-03-02 22:05:40,914] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/username/aijia1/count/ HTTP/1.1" 200 41
+[2022-03-02 22:05:53,209] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/username/%E9%BB%84%E6%81%92%E5%85%89/count/ HTTP/1.1" 200 41
+[2022-03-02 22:38:34,683] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20564
+[2022-03-02 22:38:38,148] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+[2022-03-02 22:40:25,609] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20564
+[2022-03-02 22:40:25,654] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 22:40:25,654] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 22:40:25,657] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 22:40:25,705] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 22:40:25,705] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 10864
+[2022-03-02 22:40:25,707] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 22:40:25,715] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 22:40:25,794] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-03-02 22:40:26,208] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 200 4286
+[2022-03-02 22:40:27,562] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-02 22:40:27,585] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-03-02 22:40:28,343] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+[2022-03-02 22:43:08,972] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20564
+[2022-03-02 22:43:09,016] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 304 0
+[2022-03-02 22:43:09,147] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+[2022-03-02 22:50:35,935] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20564
+[2022-03-02 22:50:36,004] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 22:50:36,004] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 22:50:36,007] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 22:50:36,054] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 10868
+[2022-03-02 22:50:36,054] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 22:50:36,057] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 22:50:36,065] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 22:50:36,145] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-03-02 22:50:36,354] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 200 4286
+[2022-03-02 22:50:36,520] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-02 22:50:36,540] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-03-02 22:50:45,403] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20564
+[2022-03-02 23:23:53,054] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+[2022-03-02 23:24:20,135] [log.py:230] [log:log_response] [WARNING]- Forbidden (CSRF cookie not set.): /users/register/
+[2022-03-02 23:24:20,137] [basehttp.py:161] [basehttp:log_message] [WARNING]- "POST /users/register/ HTTP/1.1" 403 2801
+[2022-03-02 23:24:20,271] [log.py:230] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2022-03-02 23:24:20,273] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2385
+[2022-03-02 23:24:29,621] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20603
+[2022-03-02 23:24:29,660] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 23:24:29,666] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 23:24:29,667] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 23:24:29,670] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 11018
+[2022-03-02 23:24:29,672] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 23:24:29,674] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 23:24:30,413] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20603
+[2022-03-02 23:24:30,485] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 23:24:30,604] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-03-02 23:24:30,871] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 200 4286
+[2022-03-02 23:24:33,129] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-02 23:24:33,139] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-03-02 23:24:33,816] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+[2022-03-02 23:27:48,175] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+[2022-03-02 23:27:49,497] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20603
+[2022-03-02 23:27:49,532] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 11021
+[2022-03-02 23:27:49,748] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+[2022-03-02 23:41:41,282] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20603
+[2022-03-02 23:41:41,324] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 23:41:41,326] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 23:41:41,328] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 23:41:41,394] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 23:41:41,394] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 11007
+[2022-03-02 23:41:41,396] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 23:41:41,414] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 23:41:41,513] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-03-02 23:41:41,544] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+[2022-03-02 23:41:54,416] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 200 4286
+[2022-03-02 23:41:55,467] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-02 23:41:58,413] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-03-02 23:42:11,631] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20603
+[2022-03-02 23:59:43,835] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20740
+[2022-03-02 23:59:43,953] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 11047
+[2022-03-02 23:59:47,345] [log.py:230] [log:log_response] [WARNING]- Not Found: /users/register/users/username/黄11/count/
+[2022-03-02 23:59:47,347] [basehttp.py:161] [basehttp:log_message] [WARNING]- "POST /users/register/users/username/%E9%BB%8411/count/ HTTP/1.1" 404 3136
+[2022-03-02 23:59:48,804] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20740
+[2022-03-02 23:59:48,858] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 23:59:48,858] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 23:59:48,861] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 23:59:48,875] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 23:59:48,876] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 11047
+[2022-03-02 23:59:48,879] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 23:59:48,887] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 23:59:48,990] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-03-02 23:59:49,388] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 200 4286
+[2022-03-02 23:59:50,749] [log.py:230] [log:log_response] [WARNING]- Not Found: /users/register/users/username/黄11/count/
+[2022-03-02 23:59:50,752] [basehttp.py:161] [basehttp:log_message] [WARNING]- "POST /users/register/users/username/%E9%BB%8411/count/ HTTP/1.1" 404 3136
+[2022-03-02 23:59:52,410] [log.py:230] [log:log_response] [WARNING]- Not Found: /users/register/users/username/黄11/count/
+[2022-03-02 23:59:52,413] [basehttp.py:161] [basehttp:log_message] [WARNING]- "POST /users/register/users/username/%E9%BB%8411/count/ HTTP/1.1" 404 3136
+[2022-03-02 23:59:52,612] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+[2022-03-02 23:59:52,783] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20740
+[2022-03-02 23:59:52,828] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-02 23:59:52,828] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-02 23:59:52,832] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-02 23:59:52,896] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-02 23:59:52,897] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 11047
+[2022-03-02 23:59:52,899] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-02 23:59:52,909] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-02 23:59:52,936] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+[2022-03-02 23:59:53,031] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-03-02 23:59:53,269] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 200 4286
+[2022-03-02 23:59:56,701] [log.py:230] [log:log_response] [WARNING]- Not Found: /users/register/users/username/黄11/count/
+[2022-03-02 23:59:56,702] [basehttp.py:161] [basehttp:log_message] [WARNING]- "POST /users/register/users/username/%E9%BB%8411/count/ HTTP/1.1" 404 3136
+[2022-03-02 23:59:57,569] [log.py:230] [log:log_response] [WARNING]- Not Found: /users/register/users/username/黄11/count/
+[2022-03-02 23:59:57,571] [basehttp.py:161] [basehttp:log_message] [WARNING]- "POST /users/register/users/username/%E9%BB%8411/count/ HTTP/1.1" 404 3136
+[2022-03-03 00:21:55,089] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20123
+[2022-03-03 00:21:55,245] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-03 00:21:55,245] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-03 00:21:55,249] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-03 00:21:55,295] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-03 00:21:55,295] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 11241
+[2022-03-03 00:21:55,298] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-03 00:21:55,299] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/vue.min.js HTTP/1.1" 200 167259
+[2022-03-03 00:21:55,306] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-03 00:21:55,388] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-03-03 00:21:55,802] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-03 00:21:55,805] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 200 4286
+[2022-03-03 00:21:55,823] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-03-03 00:21:56,541] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+[2022-03-03 00:23:04,732] [basehttp.py:75] [basehttp:handle_error] [INFO]- - Broken pipe from ('127.0.0.1', 65116)
+
+[2022-03-03 00:23:05,889] [basehttp.py:75] [basehttp:handle_error] [INFO]- - Broken pipe from ('127.0.0.1', 65117)
+
+[2022-03-03 00:23:06,217] [basehttp.py:75] [basehttp:handle_error] [INFO]- - Broken pipe from ('127.0.0.1', 65121)
+
+[2022-03-03 00:23:06,452] [basehttp.py:75] [basehttp:handle_error] [INFO]- - Broken pipe from ('127.0.0.1', 62444)
+
+[2022-03-03 00:23:09,297] [basehttp.py:75] [basehttp:handle_error] [INFO]- - Broken pipe from ('127.0.0.1', 62446)
+
+[2022-03-03 00:23:10,720] [basehttp.py:75] [basehttp:handle_error] [INFO]- - Broken pipe from ('127.0.0.1', 62450)
+
+[2022-03-03 00:23:10,966] [basehttp.py:75] [basehttp:handle_error] [INFO]- - Broken pipe from ('127.0.0.1', 62453)
+
+[2022-03-03 00:23:13,828] [basehttp.py:75] [basehttp:handle_error] [INFO]- - Broken pipe from ('127.0.0.1', 62455)
+
+[2022-03-03 00:23:14,073] [basehttp.py:75] [basehttp:handle_error] [INFO]- - Broken pipe from ('127.0.0.1', 62459)
+
+[2022-03-03 00:23:14,258] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20123
+[2022-03-03 00:23:14,318] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-03 00:23:14,318] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-03 00:23:14,321] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-03 00:23:14,386] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 11240
+[2022-03-03 00:23:14,386] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-03 00:23:14,390] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-03 00:23:14,390] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/vue.min.js HTTP/1.1" 200 167259
+[2022-03-03 00:23:14,400] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-03 00:23:14,521] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-03-03 00:23:14,574] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+[2022-03-03 00:23:33,069] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 200 4286
+[2022-03-03 00:23:35,727] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-03 00:23:40,337] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-03-03 00:24:02,358] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+[2022-03-03 00:25:36,175] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20153
+[2022-03-03 00:25:39,219] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20153
+[2022-03-03 00:25:39,258] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 304 0
+[2022-03-03 00:25:39,358] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/fonts/%C3%A6%E2%82%AC%C2%9D%C3%A6%C2%BA%C2%90%C3%A5%C2%AE%E2%80%B9%C3%A4%C2%BD%E2%80%9C.ttf HTTP/1.1" 404 1924
+[2022-03-03 00:25:53,515] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+[2022-03-03 00:26:48,006] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20037
+[2022-03-03 00:26:48,056] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 304 0
+[2022-03-03 00:26:48,167] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+[2022-03-03 00:26:51,529] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/fonts/%C3%A6%E2%82%AC%C2%9D%C3%A6%C2%BA%C2%90%C3%A5%C2%AE%E2%80%B9%C3%A4%C2%BD%E2%80%9C.ttf HTTP/1.1" 404 1924
+[2022-03-03 00:28:03,867] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20074
+[2022-03-03 00:28:04,162] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 304 0
+[2022-03-03 00:28:09,576] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+[2022-03-03 00:30:13,040] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20075
+[2022-03-03 00:30:13,107] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 304 0
+[2022-03-03 00:30:13,208] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /static/css/bootstrap.min.css.map HTTP/1.1" 404 1834
+[2022-03-03 00:30:26,221] [basehttp.py:161] [basehttp:log_message] [INFO]- "POST /users/register/ HTTP/1.1" 200 20075
+[2022-03-03 00:30:49,348] [log.py:230] [log:log_response] [WARNING]- Forbidden (CSRF cookie not set.): /users/register/
+[2022-03-03 00:30:49,350] [basehttp.py:161] [basehttp:log_message] [WARNING]- "POST /users/register/ HTTP/1.1" 403 2801
+[2022-03-03 00:30:49,450] [log.py:230] [log:log_response] [WARNING]- Not Found: /favicon.ico
+[2022-03-03 00:30:49,452] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /favicon.ico HTTP/1.1" 404 2385
+[2022-03-03 00:30:53,068] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20075
+[2022-03-03 00:30:53,096] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/register.css HTTP/1.1" 200 6224
+[2022-03-03 00:30:53,097] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/gloab.css HTTP/1.1" 200 16102
+[2022-03-03 00:30:53,100] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/yzm1.jpg HTTP/1.1" 200 2399
+[2022-03-03 00:30:53,105] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 11240
+[2022-03-03 00:30:53,108] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/css/bootstrap.min.css HTTP/1.1" 200 150049
+[2022-03-03 00:30:53,110] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/jquery.min.js HTTP/1.1" 200 154528
+[2022-03-03 00:30:53,111] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/vue.min.js HTTP/1.1" 200 167259
+[2022-03-03 00:30:54,224] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register HTTP/1.1" 301 0
+[2022-03-03 00:30:54,238] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20075
+[2022-03-03 00:30:54,307] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/showPwd.png HTTP/1.1" 200 416
+[2022-03-03 00:30:54,411] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/%E6%80%9D%E6%BA%90%E5%AE%8B%E4%BD%93.ttf HTTP/1.1" 200 11772444
+[2022-03-03 00:30:54,601] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/favicon.ico HTTP/1.1" 200 4286
+[2022-03-03 00:31:16,591] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20082
+[2022-03-03 00:31:38,585] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20093
+[2022-03-03 00:32:49,558] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20093
+[2022-03-03 00:32:49,641] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 11241
+[2022-03-03 00:32:51,471] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20093
+[2022-03-03 00:32:51,515] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 304 0
+[2022-03-03 00:32:52,941] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20093
+[2022-03-03 00:32:52,977] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 304 0
+[2022-03-03 00:41:37,203] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20113
+[2022-03-03 00:41:37,241] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 200 11326
+[2022-03-03 00:41:38,929] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-03-03 00:41:38,942] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-03-03 00:42:06,739] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 20113
+[2022-03-03 00:42:06,778] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/js/register.js HTTP/1.1" 304 0

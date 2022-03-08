@@ -1,0 +1,38 @@
+[2022-02-23 19:58:04,774] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-23 19:59:54,574] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 18350
+[2022-02-23 19:59:55,296] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /users/register/ HTTP/1.1" 200 18350
+[2022-02-23 19:59:58,308] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/fonts/icomoon.woff?rretjt HTTP/1.1" 200 1452
+[2022-02-23 19:59:58,328] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/fonts/icomoon.ttf?7kkyc2 HTTP/1.1" 200 13336
+[2022-02-23 20:00:06,441] [basehttp.py:161] [basehttp:log_message] [INFO]- "GET /static/img/register/hidePwd.png HTTP/1.1" 200 386
+[2022-02-23 20:00:48,593] [log.py:230] [log:log_response] [WARNING]- Not Found: /users/register/login.html
+[2022-02-23 20:00:48,594] [basehttp.py:161] [basehttp:log_message] [WARNING]- "GET /users/register/login.html HTTP/1.1" 404 2333
+[2022-02-23 20:04:42,551] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-23 20:04:43,627] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-23 20:05:40,085] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-23 20:05:41,497] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-23 20:06:05,067] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-23 20:06:06,277] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-23 20:06:49,642] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-23 20:06:50,997] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-23 20:08:12,138] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-23 20:08:13,594] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-23 20:08:35,956] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-23 20:08:36,984] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-23 20:09:11,236] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-23 20:09:12,241] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-23 20:09:20,999] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-23 20:09:22,182] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-23 20:09:38,435] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\apps\users\models.py changed, reloading.
+[2022-02-23 20:09:39,765] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-23 20:10:05,949] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\dev.py changed, reloading.
+[2022-02-23 20:10:07,302] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-23 20:11:36,418] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\dev.py changed, reloading.
+[2022-02-23 20:11:37,710] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-23 20:13:00,558] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\dev.py changed, reloading.
+[2022-02-23 20:13:01,599] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-23 20:14:48,348] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\dev.py changed, reloading.
+[2022-02-23 20:15:04,526] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-23 20:26:54,975] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\dev.py changed, reloading.
+[2022-02-23 20:26:55,999] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader
+[2022-02-23 20:28:02,603] [autoreload.py:251] [autoreload:trigger_reload] [INFO]- D:\Django_aijia\my_aijia\my_aijia\dev.py changed, reloading.
+[2022-02-23 20:28:03,611] [autoreload.py:637] [autoreload:run_with_reloader] [INFO]- Watching for file changes with StatReloader

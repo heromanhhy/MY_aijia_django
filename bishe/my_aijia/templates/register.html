@@ -1,0 +1,318 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>爱家用户注册页面-家居个性购物-正品低价、品质保证、美好追求、温馨生活</title>
+    <meta name="description" content="爱家IJ.COM-家居家具购物城、房间、卧室、客厅。。。。美好生活，充满对生活的向往！">
+    <meta name="keywords" content="爱家商城，家居，家具，网上购物，网上商城">
+    <!-- 引入favicon.icon网页图标 -->
+    <link rel="shortcut icon" href="{% static 'favicon.ico'%}" type="image/x-icon">
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/gloab.css' %}" rel="stylesheet">
+    <link href="{% static 'css/register.css' %}" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<body class="bgf4">
+    <div class="login-box f-mt10 f-pb50">
+        <div class="main bgf">
+            <div class="reg-box-pan display-inline">
+                <div class="step">
+                    <ul>
+                        <li class="col-xs-4 on">
+                            <span class="num"><em class="f-r5"></em><i>1</i></span>
+                            <span class="line_bg lbg-r"></span>
+                            <p class="lbg-txt">填写账户信息</p>
+                        </li>
+                        <li class="col-xs-4">
+                            <span class="num"><em class="f-r5"></em><i>2</i></span>
+                            <span class="line_bg lbg-l"></span>
+                            <span class="line_bg lbg-r"></span>
+                            <p class="lbg-txt">验证账户信息</p>
+                        </li>
+                        <li class="col-xs-4">
+                            <span class="num"><em class="f-r5"></em><i>3</i></span>
+                            <span class="line_bg lbg-l"></span>
+                            <p class="lbg-txt">注册结果</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="reg-box" id="verifyCheck" style="margin-top:20px;">
+                    <div id="app">
+                        <form action="#" method="post" @submit="on_submit"   >
+                            {% csrf_token %}
+                            <div class="part1" v-cloak>
+                                <!-- 用户名填写 -->
+                                <div class="item col-xs-12">
+                                    <span class="intelligent-label f-fl"><b class="ftx04">*</b>用户名：</span>
+                                    <div class="f-fl item-ifo">
+                                        <input type="text" maxlength="20" autocomplete="off" name="username" v-model="username"
+                                            @blur="check_username" class="txt03 f-r3 required" tabindex="1"
+                                            data-valid="isNonEmpty||between:3-20||isUname"
+                                            data-error="用户名不能为空||用户名长度3-20位||只能输入中文、字母、数字、下划线，且以中文或字母开头" id="adminNo" />
+                                        <span class="ie8 icon-close close hide"></span>
+                                        <label class="icon-sucessfill blank hide"></label>
+                                        <label class="focus valid"></label>
+                                    </div>
+                                    <label class="focuss" style="font-size: 16px; margin-top: 7px; margin-left: 370px; position: absolute; color: red;"
+                                        v-show="error_username"><span>[[ error_username_message ]]</span>
+                                        <img src="{% static 'img/aijai-error-1.png'%}" alt="error" srcset="" style="position: absolute; left: -10px; top: 280px;">
+                                    </label>
+                                        
+                                </div>
+                                <!-- 手机号填写 -->
+                                <div class="item col-xs-12">
+                                    <span class="intelligent-label f-fl"><b class="ftx04">*</b>手机号：</span>
+                                    <div class="f-fl item-ifo">
+                                        <input type="text" autocomplete="off" class="txt03 f-r3 required" name="mobile" v-model="mobile"
+                                            @blur="check_mobile" keycodes="tel" tabindex="2"
+                                            data-valid="isNonEmpty||isPhone" data-error="手机号码不能为空||手机号码格式不正确"
+                                            maxlength="11" id="myphone" placeholder="请输入11位手机号码..." />
+                                        <span class="ie8 icon-close close hide"></span>
+                                        <label class="icon-sucessfill blank hide"></label>
+                                        <label class="focus">请填写11位有效的手机号码</label>
+                                        <label class="focus valid"></label>
+                                        
+                                    </div>
+                                    <label class="focuss" style="font-size: 16px; margin-top: 7px; margin-left: 370px; position: absolute; color: red;"
+                                            v-show="error_mobile">
+                                            <span>[[ error_mobile_message ]]</span>
+                                            <img src="{% static 'img/aijai-error-1.png'%}" alt="error" srcset="" style="position: absolute; left: -10px; top: 230px;">
+                                    </label>
+                                </div>
+                                <!-- 密码填写 -->
+                                <div class="item col-xs-12">
+                                    <span class="intelligent-label f-fl"><b class="ftx04">*</b>密码：</span>
+                                    <div class="f-fl item-ifo">
+                                        <input type="password" id="password" maxlength="20" name="password"
+                                            class="txt03 f-r3 required" tabindex="3" style="ime-mode:disabled;"
+                                            onpaste="return false" autocomplete="off"
+                                            data-valid="isNonEmpty||between:6-20||level:2"
+                                            data-error="密码不能为空||密码长度6-20位||该密码太简单，有被盗风险，建议字母+数字的组合" />
+                                        <span class="ie8 icon-close close hide" style="right:55px"></span>
+                                        <span class="showpwd" data-eye="password"></span>
+                                        <label class="icon-sucessfill blank hide"></label>
+                                        <label class="focus">6-20位英文（区分大小写）、数字、字符的组合</label>
+                                        <label class="focus valid"></label>
+                                        <span class="clearfix"></span>
+                                        <label class="strength">
+                                            <span class="f-fl f-size12">安全程度：</span>
+                                            <b><i>弱</i><i>中</i><i>强</i></b>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- 确认密码填写 -->
+                                <div class="item col-xs-12">
+                                    <span class="intelligent-label f-fl"><b class="ftx04">*</b>确认密码：</span>
+                                    <div class="f-fl item-ifo">
+                                        <input type="password" maxlength="20" name="password2"
+                                            class="txt03 f-r3 required" tabindex="4" style="ime-mode:disabled;"
+                                            onpaste="return  false" autocomplete="off"
+                                            data-valid="isNonEmpty||between:6-16||isRepeat:password"
+                                            data-error="密码不能为空||密码长度6-16位||两次密码输入不一致" id="rePassword" />
+                                        <span class="ie8 icon-close close hide" style="right:55px"></span>
+                                        <span class="showpwd" data-eye="rePassword"></span>
+                                        <label class="icon-sucessfill blank hide"></label>
+                                        <label class="focus">请再输入一遍上面的密码</label>
+                                        <label class="focus valid"></label>
+                                    </div>
+                                </div>
+                                <!-- 验证码填写 -->
+                                <div class="item col-xs-12">
+                                    <span class="intelligent-label f-fl"><b class="ftx04">*</b>验证码：</span>
+                                    <div class="f-fl item-ifo">
+                                        <input type="text" maxlength="4" name="sms_code"
+                                            class="txt03 f-r3 f-fl required" tabindex="4" style="width:167px"
+                                            id="randCode" data-valid="isNonEmpty||isSms_Sumber"
+                                            data-error="验证码不能为空||验证码为四位" />
+                                        <span class="ie8 icon-close close hide"></span>
+                                        <label class="f-size12 c-999 f-fl f-pl10">
+                                            <!-- <img src="{% static 'img/register/yzm1.jpg' %}" /> -->
+                                            <div class="yzmbox">
+                                                <!-- <input type="text" id="code_input" value="" placeholder="请输入验证码"> -->
+                                                <div id="v_container" style="width: 110px;position: absolute;height: 40px;margin-left: -20px;margin-top: -10px;"></div>
+                                            </div>
+                                        </label>
+                                        <label class="icon-sucessfill blank hide" id="sms_code_right" style="left:380px"></label>
+                                        <label class="focusa">看不清？请点击</label>
+                                        <label class="focus valid" style="left:370px"></label>
+                                    </div>
+                                </div>
+                                <!-- 条款 -->
+                                <div class="item col-xs-12" style="height:auto">
+                                    <!-- <span class="intelligent-label f-fl">&nbsp;</span> -->
+                                    <p class="f-size14 required" style="left: 10px;" data-valid="isChecked" data-error="请先同意条款">
+                                        <input type="checkbox" name="re_checkbox" style="position: absolute;left: -418px;margin-top: 10px;" checked /><a
+                                            href="javascript:showoutc();" class="f-ml5">我已阅读并同意条款</a>
+                                    </p>
+                                    <p id="mylogin"><a href="{% url 'users:login'%}"
+                                            style="color: rgb(248, 73, 132); font-size: 16px; font-family:'siyuan';">账号登入</a>
+                                    </p>
+                                    <label class="focus valid"></label>
+
+                                </div>
+                                <!-- 下一步 -->
+                                <div class="item col-xs-12">
+                                    <span class="intelligent-label f-fl">&nbsp;</span>
+                                    <div class="f-fl item-ifo">
+                                        <a href="javascript:;" class="btn btn-blue f-r3" id="btn_part1">下一步</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 手机验证码填写 -->
+                            <div class="part2" style="display:none">
+                                <div class="alert alert-info" style="width:700px">短信已发送至您手机，请输入短信中的验证码，确保您的手机号真实有效。
+                                </div>
+                                <div class="item col-xs-12 f-mb10" style="height:auto">
+                                    <span class="intelligent-label f-fl">手机号：</span>
+                                    <div class="f-fl item-ifo c-blue">
+                                        <p id="phone_num"></p>
+                                    </div>
+                                </div>
+                                <div class="item col-xs-12">
+                                    <span class="intelligent-label f-fl"><b class="ftx04">*</b>验证码：</span>
+                                    <div class="f-fl item-ifo">
+                                        <input type="text" maxlength="6" minlength="6" name="phone_number" id="verifyNo"
+                                            class="txt03 f-r3 f-fl required" tabindex="4" style="width:167px"
+                                            data-valid="isNonEmpty||isInt_phone" data-error="验证码不能为空||请输入6位数字验证码" />
+                                        <span class="btn btn-gray f-r3 f-ml5 f-size13" id="time_box" disabled
+                                            style="width:97px;display:none;">发送验证码</span>
+                                        <span class="btn btn-gray f-r3 f-ml5 f-size13" id="verifyYz"
+                                            style="width:97px;">发送验证码</span>
+                                        <span class="ie8 icon-close close hide" style="right:130px"></span>
+                                        <label class="icon-sucessfill blank hide"></label>
+                                        <label class="focus"><span>请查收手机短信，并填写短信中的验证码（此验证码3分钟内有效）</span></label>
+                                        <label class="focus valid"></label>
+                                    </div>
+                                </div>
+                                <div class="item col-xs-12">
+                                    <span class="intelligent-label f-fl">&nbsp;</span>
+                                    <div class="f-fl item-ifo">
+                                        <input type="submit" class="btn btn-blue f-r3" id="btn_part2" value="注册">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 注册成功 -->
+                            <div class="part4 text-center" style="display:none">
+                                <!-- <h3 id="myadminNo"></h3> -->
+                                <span>
+                                    {% if register_error %}
+                                    <p style="color: red;">对不起，{{ register_error}}</p>
+                                    {% else %}
+                                    <p>欢迎<h2 id="myadminNo" style="color: red;"></h2> 来到爱家网上购物商城！！</p>
+                                    <p class="c-666 f-mt30 f-mb50" style="margin-top: 20px;">页面将在 <strong id="times"
+                                            class="f-size18">4</strong>秒钟后，跳转到
+                                        <a href="{% url 'users:login' %}" class="c-blue">
+                                            登入页面
+                                        </a>
+                                    </p>
+                                    {% endif %}
+
+                                </span>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="m-sPopBg" style="z-index:998;"></div>
+    <div class="m-sPopCon regcon">
+        <div class="m-sPopTitle"><strong>服务协议条款</strong><b id="sPopClose" class="m-sPopClose"
+                onClick="closeClause()">×</b></div>
+        <div class="apply_up_content">
+            <pre class="f-r0">
+		<strong>同意以下服务条款，提交注册信息</strong>
+        <span class="article">
+        <p>欢迎“您”（以下或称“用户”）与“福建爱家家居家居电商广告有限公司”（下称“爱家”）共同签署本《爱家服务条款》协议（下称“本协议”），</p>
+        <p>本协议阐述之条款和条件适用于您使用爱家基于互联网，以包含爱家中国网站、客户端等在内的各种形态（包括未来技术发展出现的新的服务形态）向您提供的各项服务。</p>
+        <p>本协议为《爱家服务条款》修订版本，自本协议发布之日起，爱家中国站各处所称“爱家服务条款”均指本协议。</p>
+        <p>一、接受协议</p>
+        <p>1.1 本协议内容包括协议正文及所有爱家已经发布或将来可能发布并采取合理途径通知的各类规则。所</p>
+        <p>有规则为协议不可分割的一部分，与协议正文具有同等法律效力。</p>
+        <p>1.2您在点击同意本协议之前，应当认真阅读本协议。请您务必审慎阅读、充分理解各条款内容，特别是免除或者限制责任的条款、法律适用和争议解决条款。免除或者限制责任的条款将以粗体下划线标识，您应重点阅读。</p>
+        <p>如您对协议有任何疑问，可登录1688服务中心（网址为https://1008611.com）向爱家客服咨询。</p>
+        <p>1.3当您按照注册页面提示填写信息、阅读并同意本协议且完成全部注册程序，或以任何方式进入爱家中国站并使用服务即表示您已充分阅读、理解并同意接受本协议的条款和条件。阅读本协议的过程中，如果您不同意本协议或其中任何条款约定，您应立即停止注册程序并停止使用服务。</p>
+        <p>...</p>
+        <p>...</p>
+            </span>
+        </pre>
+        </div>
+        <center><a class="btn btn-blue btn-lg f-size12 b-b0 b-l0 b-t0 b-r0 f-pl50 f-pr50 f-r3"
+                href="javascript:closeClause();">已阅读并同意此条款</a></center>
+    </div>
+</body>
+
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/vue.min.js' %}"></script>
+<script src="{% static 'js/axios.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/login/gVerify.js' %}"></script>
+<script src="{% static 'js/login/layer-v3.5.1/layer.js' %}"></script>
+<script src="{% static 'js/register.js' %}"></script>
+<script src="{% static 'js/registervue.js' %}"></script>
+
+
+<script>
+var verifyCode = new GVerify("v_container");
+
+function checkLogin() {
+    var vertify = $('#randCode').val();
+    var res = verifyCode.validate(vertify);
+    if (!res) {
+        layer.alert('验证码错误', {
+            icon: 2
+        });
+        $("#sms_code_right").hide()
+        fleshVerify();
+        return;
+    }else{
+        $("#sms_code_right").show()
+    }
+}
+// 当输入的验证码失去焦点时 ，就会出发验证正确性
+$(document).ready(function(){
+    $("#randCode").stop().blur(function(){
+        checkLogin();
+    })
+})
+
+    $(function () {
+        //第一页的确定按钮
+        $("#btn_part1").click(function () {
+            if (!verifyCheck._click()) return;
+            $(".part1").hide();
+            $(".part2").show();
+            $(".step li").eq(1).addClass("on");
+        });
+        //第二页的确定注册按钮
+        $("#btn_part2").click(function () {
+            if (!verifyCheck._click()) return;
+            $(".part2").hide();
+            $(".part4").show();
+            $(".step li").eq(2).addClass("on");
+            countdown({
+                maxTime: 4,
+                ing: function (c) {
+                    $("#times").text(c);
+                },
+                after: function () {
+                    window.location.href = "{% url 'users:login' %}";
+                }
+            });
+        });
+    });
+
+    function showoutc() {
+        $(".m-sPopBg,.m-sPopCon").show();
+    }
+
+    function closeClause() {
+        $(".m-sPopBg,.m-sPopCon").hide();
+    }
+</script>
+
+</html>

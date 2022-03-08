@@ -1,0 +1,429 @@
+/* 首页css样式 */
+/* 图标样式引入 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/fonts/icomoon.eot?rretjt');
+    src: url('../fonts/fonts/icomoon.eot?#iefixrretjt') format('embedded-opentype'),
+        url('../fonts/fonts/icomoon.woff?rretjt') format('woff'),
+        url('../fonts/fonts/icomoon.ttf?rretjt') format('truetype'),
+        url('../fonts/fonts/icomoon.svg?rretjt#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 字体引入 */
+@font-face {
+    font-family: weiruan;
+    src: url('../fonts/微软简楷体.ttf');
+
+}
+
+@font-face {
+    font-family: siyuan;
+    src: url('../fonts/思源宋体.ttf');
+
+}
+
+@font-face {
+    font-family: fangyuan;
+    src: url('../fonts/方圆准圆体.ttf');
+
+}
+
+/* banner轮播图start */
+.banner {
+    height: 550px;
+    background-color: aliceblue;
+}
+
+.banner_nav {
+    height: 550px;
+}
+
+#jssor_1 {
+    vertical-align: middle;
+}
+
+/* banner轮播图end */
+.jssora05l,
+.jssora05r {
+    display: block;
+    position: absolute;
+    /* size of arrow element */
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: url('../img/img_nav/a17.png') no-repeat;
+    overflow: hidden;
+}
+
+.jssora05l {
+    background-position: -10px -40px;
+}
+
+.jssora05r {
+    background-position: -70px -40px;
+}
+
+.jssora05l:hover {
+    background-position: -130px -40px;
+}
+
+.jssora05r:hover {
+    background-position: -190px -40px;
+}
+
+.jssora05l.jssora05ldn {
+    background-position: -250px -40px;
+}
+
+.jssora05r.jssora05rdn {
+    background-position: -310px -40px;
+}
+
+.jssora05l.jssora05lds {
+    background-position: -10px -40px;
+    opacity: .3;
+    pointer-events: none;
+}
+
+.jssora05r.jssora05rds {
+    background-position: -70px -40px;
+    opacity: .3;
+    pointer-events: none;
+}
+
+.jssort01-99-66 .p {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 99px;
+    height: 66px;
+}
+
+.jssort01-99-66 .t {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.jssort01-99-66 .w {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.jssort01-99-66 .c {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 95px;
+    height: 62px;
+    border: #000 2px solid;
+    box-sizing: content-box;
+    background: url('../img/img_nav/t01.png') -800px -800px no-repeat;
+    _background: none;
+}
+
+.jssort01-99-66 .pav .c {
+    top: 2px;
+    _top: 0px;
+    left: 2px;
+    _left: 0px;
+    width: 95px;
+    height: 62px;
+    border: #000 0px solid;
+    _border: #fff 2px solid;
+    background-position: 50% 50%;
+}
+
+.jssort01-99-66 .p:hover .c {
+    top: 0px;
+    left: 0px;
+    width: 97px;
+    height: 64px;
+    border: #fff 1px solid;
+    background-position: 50% 50%;
+}
+
+.jssort01-99-66 .p.pdn .c {
+    background-position: 50% 50%;
+    width: 95px;
+    height: 62px;
+    border: #000 2px solid;
+}
+
+* html .jssort01-99-66 .c,
+* html .jssort01-99-66 .pdn .c,
+* html .jssort01-99-66 .pav .c {
+    /* ie quirks mode adjust */
+    width
+    /**/
+    : 99px;
+    height
+    /**/
+    : 66px;
+}
+
+/* 美好生活 */
+.title {
+    height: 100px;
+}
+
+.title img {
+    padding: 0 352px;
+}
+
+/* 一层楼 */
+.container1 {
+    height: 760px;
+}
+
+.container_header {
+    height: 160px;
+    margin-top: 50px;
+}
+
+.container_h1>p {
+    font-family: 'weiruan';
+    font-size: 25px;
+    margin: 15px 0;
+    color: #000;
+}
+
+.container_h1 span>p {
+    font-family: 'siyuan';
+    font-size: 16px;
+}
+
+.container_h2 {
+    width: 150px;
+    height: 40px;
+    background: white;
+    border-radius: 25px;
+    margin-top: 60px;
+    margin-right: 100px;
+    border: 1px #111 solid;
+    transition: all 0.5;
+}
+.container_h2:hover{
+    font-size: 18px;
+}
+.container_h2 a {
+    display: block;
+    line-height: 35px;
+    text-align: center;
+    font-family: 'siyuan';
+    color: black;
+}
+
+.container1_main {
+    height: 600px;
+    background-color: pink;
+}
+
+.container1_main_l {
+    width: 600px;
+    height: 600px;
+    background-color: #000;
+}
+
+.container1_main_l a {
+    display: block;
+    height: 600px;
+    overflow: hidden;
+}
+
+.container1_main_r {
+    width: 600px;
+    height: 600px;
+    overflow-x: hidden;
+    /*隐藏x轴的滚动条*/
+    height: 580px;
+    overflow-y: scroll;
+}
+
+.container2,
+.container3 {
+    margin-top: 30px;
+}
+
+/* 瀑布流 */
+#gallery-wrapper {
+    position: relative;
+    max-width: 600;
+    width: 550px;
+    margin: 0px auto;
+}
+
+img.thumb {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.white-panel {
+    position: absolute;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+}
+
+.white-panel h1 {
+    font-size: 1em;
+}
+
+.white-panel h1 a {
+    color: #A92733;
+}
+
+.white-panel:hover {
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+    margin-top: -5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 二层楼展示区 */
+.container2{
+    height: 2600px;
+}
+.container2_main {
+    position: absolute;
+    margin-top: -20px;
+    height: 600px;
+}
+
+.container2_main_w {
+    float: left;
+    width: 380px;
+    height: 600px;
+    border: 1px solid #ccc;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+}
+
+#container2_tab1 a {
+    display: block;
+    height: 580px;
+}
+
+#container2_tab1 button {
+    position: relative;
+    top: -50px;
+    left: 130px;
+}
+#container2_tab2,#container2_tab3,#container2_tab3{
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    background-color: #ccc;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.container2_tab3l{
+    width: 640px;
+    height: 600px;
+    float: left;
+    background:pink;
+}
+.container2_tab3r{
+    position: absolute;
+    right: 0;
+    height: 600px;
+}
+
+.container2_tab3r1{
+    width: 550px;
+    height: 200px;
+    background:green;
+}
+.container2_tab3r2{
+    height: 380px;
+    margin-top: 20px;
+}
+.container2_tab3r2 div{
+    float: left;
+    width: 263px;
+    height: 100%;
+    background: #A92733;
+}
+.container2_tab3r2 div:nth-child(1){
+    margin: 0 20px 0 1px;
+}
+
+/* 三层楼展示区 */
+.container3 {
+    height: 560px;
+}
+
+.container3_main {
+    position: relative;
+    height: 400px;
+}
+/* 思楼展示区 */
+.container4 {
+    height: 400px;
+}
+
+.container4_main {
+    height: 240px;
+}
+
+.container4_list li {
+    float: left;
+    width: 260px;
+    height: 240px;
+    margin: 0 20px;
+    /* overflow: hidden; */
+}
+
+.container4_list li a button {
+    position: relative;
+    top: -100px;
+    left: 80px;
+    border-radius: 20px;
+    background: rgba(1, 100, 2, .2);
+}
+
+.container4_list li>a {
+    display: block;
+}
+
+.container4_list p {
+    position: relative;
+    top: -20px;
+}
+
+/* 五楼展示 */
+.container5_main {
+    height: 600px;
+    overflow: hidden;
+}
+
+.slider_circle_10,
+.slider_four_in_line {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 六楼展示区 */
+.container6 {
+    height: 560px;
+}
+
+.container6_main {
+    height: 400px;
+    border-radius: 20px;
+}
+
+/* 七楼展示 */

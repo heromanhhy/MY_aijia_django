@@ -1,0 +1,136 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>爱家密码找回页面</title>
+    <!-- 引入favicon.icon网页图标 -->
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <!-- 引入css初始化的css文件 -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <!-- 引入css公共样式css文件 -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <link rel="stylesheet" href="{% static 'css/forget_password.css' %}">
+    <!-- materialize样式 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+</head>
+
+<body>
+    <div class="loginbar">
+        <div class="login_w">
+            <div id="login-page" class="row">
+                <div class="col s12 z-depth-6 card-panel">
+                    <form class="login-form">
+                        <div class="row">
+                            <div class="input-field col s12 center">
+                                <img src="{% static 'img/logo.png' %}" alt=""
+                                    class="responsive-img valign profile-image-login">
+                                <p class="center login-form-text">用户密码找回页面</p>
+                            </div>
+                        </div>
+                        <div class="row margin">
+                            <div class="input-field col s12">
+                                <i class="mdi-social-person-outline prefix"></i>
+                                <input class="validate" id="email" type="email">
+                                <label for="email" data-error="wrong" data-success="right" class="center-align">Email</label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s12">
+                                <a href="{% url 'users:forgot_pwd'%}" class="btn waves-effect waves-light col s12">重置我的密码</a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="input-field col s6 m6 l6">
+                                <p class="margin medium-small"><a href="{% url 'users:register'%}">立刻注册!</a></p>
+                            </div>
+                            <div class="input-field col s6 m6 l6">
+                                <p class="margin right-align medium-small"><a href="{% url 'users:login'%}">登录</a></p>
+                            </div>
+                        </div>
+        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- 尾部服务导栏start -->
+    <div class="footer">
+        <div class="w">
+            <!-- 服务指南顶部footer_container -->
+            <div class="footer_container">
+                <ul class="footer_container_top">
+                    <li class="footer_container_top1 fl">
+                        <p>欢迎登入<i></i>家网上购物</p>
+                        <p>主人，我已等候您多时~~<a href="#">爱家萌宠>></a></p>
+                    </li>
+                    <li class="footer_container_top2 fr">
+                        <ul>
+                            <li>
+                                <dt class="footer_container_top2_dt"><strong>常用链接</strong></dt>
+                                <dd><a href="#">爱家商城App</a></dd>
+                                <dd><a href="#">本地商场</a></dd>
+                                <dd><a href="#">在线设计工具</a></dd>
+                                <dd><a href="#">爱家俱乐部</a></dd>
+                                <dd><a href="#">爱家对公业务</a></dd>
+                                <dd><a href="#">爱家附近美食</a></dd>
+                            </li>
+                            <li>
+                                <dt class="footer_container_top2_dt"><strong>客户服务</strong></dt>
+                                <dd><a href="#">客户服务</a></dd>
+                                <dd><a href="#">联系我们</a></dd>
+                                <dd><a href="#">网上商城配送范围</a></dd>
+                                <dd><a href="#">常见问题</a></dd>
+                                <dd><a href="#">退货政策</a></dd>
+                                <dd><a href="#">品质保证</a></dd>
+                            </li>
+                            <li>
+                                <dt class="footer_container_top2_dt"><strong>品质保证</strong></dt>
+                                <dd><a href="#">这就是爱家</a></dd>
+                                <dd><a href="#">自主设计</a></dd>
+                                <dd><a href="#">可持续的日常生活</a></dd>
+                                <dd><a href="#">社区参与</a></dd>
+                                <dd><a href="#">加入我们</a></dd>
+                                <dd><a href="#">意见反馈</a></dd>
+                            </li>
+                            <li>
+                                <dt class="footer_container_top2_dt"><strong>宜家新闻</strong></dt>
+                                <dd><a href="#">新闻联络</a></dd>
+                                <dd><a href="#">商品召回</a></dd>
+                                <dd><a href="#">牢牢固定！</a></dd>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 服务指南顶部footer_container -->
+
+                <div class="footer_container_bottom">
+                    <div class="footer_container_bottom1 w">
+                        <ul class="login_item">
+                            <!-- <li><a href="" class="qq icomoon"><i></i></a></li>
+                            <li><a href="" class="wecat icomoon"><i></i></a></li>
+                            <li><a href="" class="weibo icomoon"><i></i></a></li> -->
+                        </ul>
+                    </div>
+                    <div class="footer_container_bottom2">
+                        <div class="bottom2_l fl">
+                            <p>© Inter AIJIA.COM Systems B.V. 2021-2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部服务导栏end -->
+</body>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/login.js' %}"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/js/materialize.min.js"></script>
+
+
+</html>

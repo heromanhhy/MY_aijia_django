@@ -1,0 +1,378 @@
+[2022-02-27 13:57:47,018] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view users.views.RegisterView didn't return an HttpResponse object. It returned None instead.
+[2022-02-27 13:57:47,022] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 68018
+[2022-02-27 13:58:03,284] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view users.views.RegisterView didn't return an HttpResponse object. It returned None instead.
+[2022-02-27 13:58:03,287] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 68018
+[2022-02-27 13:59:08,696] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view users.views.RegisterView didn't return an HttpResponse object. It returned None instead.
+[2022-02-27 13:59:08,699] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 67722
+[2022-02-27 15:00:06,235] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 188, in _get_response
+    self.check_response(response, callback)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 311, in check_response
+    "instead." % name
+ValueError: The view users.views.RegisterView didn't return an HttpResponse object. It returned None instead.
+[2022-02-27 15:00:06,240] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 67722
+[2022-02-27 19:07:31,369] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'contenst'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 39, in post
+    return redirect(reverse('contenst:index'))
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'contenst' is not a registered namespace
+[2022-02-27 19:07:31,376] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 93493
+[2022-02-27 20:48:13,208] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 470, in parse
+    compile_func = self.tags[command]
+KeyError: 'path'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 46, in post
+    return render(request, 'register.html', context=context)
+  File "D:\Python37\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "D:\Python37\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "D:\Python37\lib\site-packages\django\template\loader.py", line 15, in get_template
+    return engine.get_template(template_name)
+  File "D:\Python37\lib\site-packages\django\template\backends\django.py", line 34, in get_template
+    return Template(self.engine.get_template(template_name), self)
+  File "D:\Python37\lib\site-packages\django\template\engine.py", line 143, in get_template
+    template, origin = self.find_template(template_name)
+  File "D:\Python37\lib\site-packages\django\template\engine.py", line 125, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "D:\Python37\lib\site-packages\django\template\loaders\base.py", line 30, in get_template
+    contents, origin, origin.template_name, self.engine,
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 155, in __init__
+    self.nodelist = self.compile_nodelist()
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 193, in compile_nodelist
+    return parser.parse()
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 472, in parse
+    self.invalid_block_tag(token, command, parse_until)
+  File "D:\Python37\lib\site-packages\django\template\base.py", line 534, in invalid_block_tag
+    "or load this tag?" % (token.lineno, command)
+django.template.exceptions.TemplateSyntaxError: Invalid block tag on line 44: 'path'. Did you forget to register or load this tag?
+[2022-02-27 20:48:13,230] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 155912
+[2022-02-27 22:02:39,009] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 21, in post
+    username=register_form.cleaned_data.get['username']
+TypeError: 'builtin_function_or_method' object is not subscriptable
+[2022-02-27 22:02:39,019] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 80387
+[2022-02-27 22:02:40,856] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 21, in post
+    username=register_form.cleaned_data.get['username']
+TypeError: 'builtin_function_or_method' object is not subscriptable
+[2022-02-27 22:02:40,861] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 80683
+[2022-02-27 22:02:42,063] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 21, in post
+    username=register_form.cleaned_data.get['username']
+TypeError: 'builtin_function_or_method' object is not subscriptable
+[2022-02-27 22:02:42,070] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 80683
+[2022-02-27 22:51:21,804] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'contenst'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 47, in post
+    return redirect(reverse('contenst:index'))
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'contenst' is not a registered namespace
+[2022-02-27 22:51:21,814] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 93356
+[2022-02-27 23:08:20,447] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'contenst'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 47, in post
+    return redirect(reverse('contenst:index'))
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'contenst' is not a registered namespace
+[2022-02-27 23:08:20,458] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 93646
+[2022-02-27 23:10:48,293] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'contenst'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 47, in post
+    return redirect(reverse('contenst:index'))
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'contenst' is not a registered namespace
+[2022-02-27 23:10:48,302] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 93652
+[2022-02-27 23:13:27,962] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'contenst'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 47, in post
+    return redirect(reverse('contenst:index'))
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'contenst' is not a registered namespace
+[2022-02-27 23:13:27,972] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 93652
+[2022-02-27 23:15:52,550] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'contenst'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 47, in post
+    return redirect(reverse('contenst:index'))
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'contenst' is not a registered namespace
+[2022-02-27 23:15:52,561] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 93656
+[2022-02-27 23:18:15,643] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'contenst'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 47, in post
+    return redirect(reverse('contenst:index'))
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'contenst' is not a registered namespace
+[2022-02-27 23:18:15,652] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 93642
+[2022-02-27 23:40:07,214] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'contenst'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 47, in post
+    return redirect(reverse('contenst:index'))
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'contenst' is not a registered namespace
+[2022-02-27 23:40:07,225] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 93656
+[2022-02-27 23:42:09,162] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'contenst'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 47, in post
+    return redirect(reverse('contenst:index'))
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'contenst' is not a registered namespace
+[2022-02-27 23:42:09,173] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 93650
+[2022-02-27 23:43:55,007] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'contenst'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 47, in post
+    return redirect(reverse('contenst:index'))
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'contenst' is not a registered namespace
+[2022-02-27 23:43:55,017] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 93644
+[2022-02-27 23:54:35,193] [log.py:230] [log:log_response] [ERROR]- Internal Server Error: /users/register/
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+KeyError: 'contenst'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Python37\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "D:\Python37\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 70, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "D:\Python37\lib\site-packages\django\views\generic\base.py", line 98, in dispatch
+    return handler(request, *args, **kwargs)
+  File "D:\Django_aijia\my_aijia\my_aijia/apps\users\views.py", line 45, in post
+    return redirect(reverse('contenst:index'))
+  File "D:\Python37\lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'contenst' is not a registered namespace
+[2022-02-27 23:54:35,218] [basehttp.py:161] [basehttp:log_message] [ERROR]- "POST /users/register/ HTTP/1.1" 500 93650
