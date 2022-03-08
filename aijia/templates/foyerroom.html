@@ -1,0 +1,2793 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>门厅商品-好品质家居家具、专业平台、好服务、体验式购买</title>
+    <meta name="description" content="爱家IJ.COM-家居家具购物城、房间、卧室、办公。。。。美好生活，充满对生活的向往！">
+    <meta name="keywords" content="爱家商城，家居，家具，网上购物，网上商城">
+    <!-- 引入favicon.icon网页图标 -->
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
+    <!-- 引入css初始化的css文件 -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <!-- 引入css公共样式css文件 -->
+    <link rel="stylesheet" href="{% static 'css/common.css' %}">
+    <!-- 引入列表list.css样式 -->
+    <link rel="stylesheet" href="{% static 'css/list.css' %}">
+    <link rel="stylesheet" href="{% static 'css/jquery.easy_slides.css' %}">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+</head>
+
+<body>
+    <!-- 顶部导栏 start -->
+    <div class="shortcut">
+        <div class="shortcut_header w">
+            <div class="fl">
+                <h1><a href="{% url 'contents:index'%}"><img src="{% static 'img/logo.png' %}" alt="" title="爱家aijia.com"></a></h1>
+                <ul class="shortcut_items">
+                    <span class="cloud"></span>
+                    <li><a href="#">所有商品</a></li>
+                    <li><a href="#">房间类型</a></li>
+                    <li><a href="#">活动促销</a></li>
+                    <li><a href="#">节日氛围</a></li>
+                    <li><a href="#">设计样式</a></li>
+                </ul>
+                <div class="Search">
+                    <input type="text" class="text" placeholder="试试搜索一下">
+                    <a href="#"><i></i></a>
+                </div>
+            </div>
+            <div class="fr">
+                <ul class="header_fr">
+                    <li><a href=""><i class="ico_login icomoon"></i> 登入</a></li>
+                    <li>|</li>
+                    <li><a href="">注册</a></li>
+                    <li><a href=""><i class="vip icomoon"> </i> 会员</a></li>
+                    <li><a href=""><i class="ico_like icomoon"> </i>喜欢</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 下拉菜单 -->
+    <div class="shortcut_menu">
+        <div class="w">
+            <!-- 下拉菜单左选项 -->
+            <div class="shortcut_menul fl">
+                <!-- 所有商品 -->
+                <ul id="shortcut_menul" style="display: block;">
+                    <li class="current1">家具<i></i></li>
+                    <li>厨房电器<i></i></li>
+                    <li>床和床垫<i></i></li>
+                    <li>储物和收纳<i></i></li>
+                    <li>居家办公<i></i></li>
+                    <li>纺织品<i></i></li>
+                    <li>装饰品<i></i></li>
+                    <li>浴室产品<i></i></li>
+                    <li>户外产品<i></i></li>
+                    <li>灯具照明<i></i></li>
+                    <li>智能家居<i></i></li>
+                    <li>地毯、门垫和地板<i></i></li>
+                    <li>冬季节日<i></i></li>
+                    <li>花盆和植物<i></i></li>
+                    <li>餐具和厨具<i></i></li>
+                    <li>宠物用品<i></i></li>
+                </ul>
+                <!-- 房间类型 -->
+                <ul id="shortcut_menul">
+                    <li class="current1">卧室<i></i></li>
+                    <li>客厅<i></i></li>
+                    <li>厨房<i></i></li>
+                    <li>餐厅<i></i></li>
+                    <li>儿童房<i></i></li>
+                    <li>办公室和书房<i></i></li>
+                    <li>门厅<i></i></li>
+                </ul>
+                <!-- 活动促销 -->
+                <ul id="shortcut_menul">
+                    <li class="current1">会员新年优惠<i></i></li>
+                    <li>我们的更低低价<i></i></li>
+                    <li>低价优选<i></i></li>
+                    <li>会员优惠<i></i></li>
+                </ul>
+                <!-- 节日氛围 -->
+                <ul id="shortcut_menul">
+                    <li class="current1">春节<i></i></li>
+                    <li>元宵节<i></i></li>
+                    <li>冬至雅节<i></i></li>
+                    <li>圣诞节<i></i></li>
+                    <li>春<i></i></li>
+                    <li>夏<i></i></li>
+                    <li>秋<i></i></li>
+                    <li>冬<i></i></li>
+                </ul>
+                <!-- 设计样式 -->
+                <ul id="shortcut_menul">
+                    <li class="current1">全屋设计<i></i></li>
+                    <li>厨房设计<i></i></li>
+                    <li>卧室设计<i></i></li>
+                    <li>儿童房设计<i></i></li>
+                    <li>户外设计<i></i></li>
+                </ul>
+            </div>
+            <!-- 下拉菜单右选项 -->
+            <div class="shortcut_menur fr">
+                <!-- 所有商品 -->
+                <div id="shortcut_menur_index" style="display: block;">
+                    <div id="shortcut_menul_items" style="display: block;">
+                        <dt>
+                            <p>家居</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>c厨房电器</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>冰箱</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>空调</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>洗衣机</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>电视</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>洗碗机</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>热水器</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>微波炉</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>床和床垫</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床垫</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>卧室纺织品</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床头柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床板</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床脚</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>储物和收纳</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋架和衣帽架</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>挂钩</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>书柜和置物架</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>抽屉柜和抽屉框架</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>抽屉</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>橱柜和展示柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>居家办公</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>书桌</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>工作灯</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>纺织品</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>装饰品</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>浴室产品</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>户外产品</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>灯具照明</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>智能家居</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>地毯、门垫和地板</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>冬季节日</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>花盆和植物</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>餐具和厨具</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>宠物用品</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                </div>
+                <!-- 房间类型 -->
+                <div id="shortcut_menur_index">
+                    <div id="shortcut_menul_items" style="display: block;">
+                        <dt>
+                            <p>卧室</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>儿童房</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>茶几</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>电视柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>书柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>灯</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>厨房</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>储藏用具</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>洗涤用具</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>调理用具</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>烹饪用具</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>炊事用具</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>餐饮用具</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>厨房小设备</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>儿童房</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>餐桌</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>餐椅</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>卡座</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>转盘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>餐柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>装饰</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>儿童房</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>书桌</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>书椅</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>抱枕</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>储物架</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>办公室和书房</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>书桌</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>书椅</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>储物架</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>门厅</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>门</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>花架</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>灯</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                </div>
+                <!-- 活动促销 -->
+                <div id="shortcut_menur_index">
+                    <div id="shortcut_menul_items" style="display: block;">
+                        <dt>
+                            <p>会员新年优惠</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>我们的更低低价</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>低价优选</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>会员优惠</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                </div>
+                <!-- 节日氛围 -->
+                <div id="shortcut_menur_index">
+                    <div id="shortcut_menul_items" style="display: block;">
+                        <dt>
+                            <p>春节</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>元宵节</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>冬至雅节</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>圣诞节</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>春</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>夏</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>秋</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>冬</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                </div>
+                <!-- 设计样式 -->
+                <div id="shortcut_menur_index">
+                    <div id="shortcut_menul_items" style="display: block;">
+                        <dt>
+                            <p>儿童房</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>全屋设计</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>厨房设计</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>卧室设计</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>儿童房设计</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                    <div id="shortcut_menul_items">
+                        <dt>
+                            <p>户外设计</p>
+                        </dt>
+                        <dd id="shortcut_menur1">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>床</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>椅子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>沙发</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>衣柜</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>桌子</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>窗帘</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="" alt="190*80">
+                                        <p>鞋柜</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </dd>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 电梯快捷导栏 -->
+    <div class="scroll_nav">
+        <ul class="scroll_items">
+            <li id="scroll_items1">风格推广</li>
+            <li id="scroll_items2">其他风格</li>
+            <li id="scroll_items3">办公系列家具</li>
+            <li id="scroll_items4">设计方案</li>
+            <li id="scroll_items5">特惠产品</li>
+            <li id="scroll_items6">布置灵感</li>
+            <li id="scroll_cat"><i></i></li>
+            <li id="scroll_call">反馈</li>
+            <li id="scroll_search">搜索</li>
+            <li id="scroll_back"><i class="scroll_icomoon"></i>
+                <p>回到顶部</p>
+            </li>
+        </ul>
+        <div>
+            <input type="text" name="" id="scroll_search_input" placeholder="请输入搜索内容...">
+        </div>
+    </div>
+    <!-- 购物车小样 -->
+    <div class="cd-cart-container empty">
+        <a href="#" class="cd-cart-trigger">
+            <ul class="count">
+                <!-- cart items count -->
+                <li>0</li>
+                <li>0</li>
+            </ul> <!-- .count -->
+        </a>
+
+        <div class="cd-cart">
+            <div class="wrapper">
+                <header>
+                    <h2>购物车</h2>
+                    <span class="undo">删除操作成功！<a href="#0">返回上一步</a></span>
+                </header>
+                <div class="body">
+                    <ul>
+                        <!-- products added to the cart will be inserted here using JavaScript -->
+                    </ul>
+                </div>
+
+                <footer>
+                    <a href="#0" class="checkout btn"><em>合计：<span>0</span>元</em></a>
+                </footer>
+            </div>
+        </div> <!-- .cd-cart -->
+    </div> <!-- cd-cart-container -->
+    <!-- 门厅商品列表栏 -->
+    <div class="shop_list w">
+        <!-- 种类标题 -->
+        <div class="shop_list_header">门厅</div>
+        <!-- 商品分类 -->
+        <div class="shop_list_items">
+            <a href="#">
+                <div id="shop_list_items_img">
+                    <img src="" alt="200*100">
+                </div>
+                <div id="shop_list_items_t">床</div>
+            </a>
+            <a href="#">
+                <div id="shop_list_items_img">
+                    <img src="" alt="200*100">
+                </div>
+                <div id="shop_list_items_t">书桌</div>
+            </a>
+            <a href="#">
+                <div id="shop_list_items_img">
+                    <img src="3" alt="200*100">
+                </div>
+                <div id="shop_list_items_t">书椅</div>
+            </a>
+            <a href="#">
+                <div id="shop_list_items_img">
+                    <img src="" alt="200*100">
+                </div>
+                <div id="shop_list_items_t">衣柜</div>
+            </a>
+            <a href="#">
+                <div id="shop_list_items_img">
+                    <img src="" alt="200*100">
+                </div>
+                <div id="shop_list_items_t">抱枕</div>
+            </a>
+            <a href="#">
+                <div id="shop_list_items_img">
+                    <img src="" alt="200*100">
+                </div>
+                <div id="shop_list_items_t">储藏架</div>
+            </a>
+            <a href="#">
+                <div id="shop_list_items_img">
+                    <img src="" alt="200*100">
+                </div>
+                <div id="shop_list_items_t">鞋柜</div>
+            </a>
+        </div>
+        <!-- 功能菜单 -->
+        <div class="shop_list_submenu">
+            <ul>
+                <li><a href="#">门厅家具系列</a></li>
+                <li><a href="#">门厅解决方案</a></li>
+                <li><a href="#">门厅布置灵感和建议</a></li>
+                <li><a href="#">打造聪明又舒适的门厅</a></li>
+                <li><a href="#">创意搭配</a></li>
+            </ul>
+        </div>
+        <!-- 风格推广单元1 -->
+        <div class="shop_list_style">
+            <div class="shop_list_style_dt">
+                <p><strong>黄恒勇的学院风格设计</strong></p>
+                <p>他设计的学院风卫衣，采用。。。。。设计，荣获。。。。优秀设计奖</p>
+            </div>
+            <div class="shop_list_style_dd">
+                <div><img src="" alt="600*700照片"></div>
+                <div>
+                    <div class="shop_list_style_img">
+                        <li id="shop_list_style_img1">
+                            <a href="#"><img src="" alt="290*250img"></a>
+                            <a href="#"><img src="" alt="290*440img"></a>
+                        </li>
+                        <li id="shop_list_style_img2">
+                            <a href="#"><img src="" alt="290*410img"></a>
+                            <a href="#"><img src="" alt="290*280img"></a>
+                        </li>
+                    </div>
+                </div>
+            </div>
+            <div class="shop_list_style_more">
+                <a href="#">查看更多关于***的设计</a>
+            </div>
+        </div>
+        <!-- 更多风格选择2 -->
+        <div class="shop_style">
+            <div class="htmleaf-content">
+                <div class="slider slider_four_in_line">
+                    <div>
+                        <a href="#"><img src="#" alt=""></a>
+                        <ul class="shop_information">
+                            <li class="shop_t">
+                                <a href="#">汉尼斯1</a>
+                            </li>
+                            <li class="shop_size">
+                                <p>床桌 160厘米*70厘米</p>
+                            </li>
+                            <li class="shop_price current">
+                                ￥1300
+                                <a href="javascript:;" class="cd-add-to-cart" data-price="30">添加到购物车<i></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#"><img src="#" alt=""></a>
+                        <ul class="shop_information">
+                            <li class="shop_t">
+                                <a href="#">汉尼斯1</a>
+                            </li>
+                            <li class="shop_size">
+                                <p>床桌 160厘米*70厘米</p>
+                            </li>
+                            <li class="shop_price current">
+                                ￥1300
+                                <a href="javascript:;" class="cd-add-to-cart" data-price="30">添加到购物车<i></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#"><img src="#" alt=""></a>
+                        <ul class="shop_information">
+                            <li class="shop_t">
+                                <a href="#">汉尼斯1</a>
+                            </li>
+                            <li class="shop_size">
+                                <p>床桌 160厘米*70厘米</p>
+                            </li>
+                            <li class="shop_price current">
+                                ￥1300
+                                <a href="javascript:;" class="cd-add-to-cart" data-price="30">添加到购物车<i></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#"><img src="#" alt=""></a>
+                        <ul class="shop_information">
+                            <li class="shop_t">
+                                <a href="javascript:;">汉尼斯1</a>
+                            </li>
+                            <li class="shop_size">
+                                <p>床桌 160厘米*70厘米</p>
+                            </li>
+                            <li class="shop_price current">
+                                ￥1300
+                                <a href="javascript:;" class="cd-add-to-cart" data-price="30">添加到购物车<i></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#"><img src="#" alt=""></a>
+                        <ul class="shop_information">
+                            <li class="shop_t">
+                                <a href="#">汉尼斯1</a>
+                            </li>
+                            <li class="shop_size">
+                                <p>床桌 160厘米*70厘米</p>
+                            </li>
+                            <li class="shop_price current">
+                                ￥1300
+                                <a href="javascript:;" class="cd-add-to-cart" data-price="30">添加到购物车<i></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#"><img src="#" alt=""></a>
+                        <ul class="shop_information">
+                            <li class="shop_t">
+                                <a href="#">汉尼斯1</a>
+                            </li>
+                            <li class="shop_size">
+                                <p>床桌 160厘米*70厘米</p>
+                            </li>
+                            <li class="shop_price current">
+                                ￥1300
+                                <a href="javascript:;" class="cd-add-to-cart" data-price="30">添加到购物车<i></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#"><img src="#" alt=""></a>
+                        <ul class="shop_information">
+                            <li class="shop_t">
+                                <a href="#">汉尼斯1</a>
+                            </li>
+                            <li class="shop_size">
+                                <p>床桌 160厘米*70厘米</p>
+                            </li>
+                            <li class="shop_price current">
+                                ￥1300
+                                <a href="javascript:;" class="cd-add-to-cart" data-price="30">添加到购物车<i></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#"><img src="#" alt=""></a>
+                        <ul class="shop_information">
+                            <li class="shop_t">
+                                <a href="#">汉尼斯1</a>
+                            </li>
+                            <li class="shop_size">
+                                <p>床桌 160厘米*70厘米</p>
+                            </li>
+                            <li class="shop_price current">
+                                ￥1300
+                                <a href="javascript:;" class="cd-add-to-cart" data-price="30">添加到购物车<i></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <a href="#"><img src="#" alt=""></a>
+                        <ul class="shop_information">
+                            <li class="shop_t">
+                                <a href="#">汉尼斯1</a>
+                            </li>
+                            <li class="shop_size">
+                                <p>床桌 160厘米*70厘米</p>
+                            </li>
+                            <li class="shop_price current">
+                                ￥1300
+                                <a href="javascript:;" class="cd-add-to-cart" data-price="30">添加到购物车<i></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="next_button"></div>
+                    <div class="prev_button"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 其他门厅系列家具3 -->
+        <div class="shop_other_style">
+            <div class="shop_other_style_title">
+                <h4>其他门厅系列家具</h4>
+            </div>
+            <div class="shop_other_style_top">
+                <ul>
+                    <li>
+                        <a href="">
+                            <div class="shop_other_style_img"><img src="" alt="380*230"></div>
+                            <h5>HX黄恒勇 门厅温馨家具</h5>
+                            <p>今天的任务是完成这份门厅html</p>
+                        </a>
+                    </li>
+                    <li><a href="">
+                            <div class="shop_other_style_img"><img src="" alt="380*230"></div>
+                            <h5>HX黄恒勇 门厅温馨家具</h5>
+                            <p>今天的任务是完成这份门厅html</p>
+                        </a></li>
+                    <li><a href="">
+                            <div class="shop_other_style_img"><img src="" alt="380*230"></div>
+                            <h5>HX黄恒勇 门厅温馨家具</h5>
+                            <p>今天的任务是完成这份门厅html</p>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="shop_other_style_footer">
+                <ul>
+                    <li><a href="">
+                            <div class="shop_other_style_img"><img src="" alt="380*230"></div>
+                            <h5>HX黄恒勇 门厅温馨家具</h5>
+                            <p>今天的任务是完成这份门厅html</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="shop_other_style_img"><img src="" alt="380*230"></div>
+                            <h5>HX黄恒勇 门厅温馨家具</h5>
+                            <p>今天的任务是完成这份门厅html</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div class="shop_other_style_img"><img src="" alt="380*230"></div>
+                            <h5>HX黄恒勇 门厅温馨家具</h5>
+                            <p>今天的任务是完成这份门厅html</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="shop_list_submenu">
+            <ul>
+                <li><a href="#">门厅家具系列</a></li>
+                <li><a href="#">门厅解决方案</a></li>
+                <li><a href="#">门厅布置灵感和建议</a></li>
+                <li><a href="#">打造聪明又舒适的门厅</a></li>
+                <li><a href="#">创意搭配</a></li>
+            </ul>
+        </div>
+        <!-- 值得优惠门厅设计方案4 -->
+        <div class="shop_list_scheme">
+            <div class="shop_other_style_title">
+                <h4>其他门厅系列家具</h4>
+            </div>
+            <div class="shop_list_worth">
+                <div><img src="" alt="830*600img"></div>
+                <div>
+                    <span>
+                        <h3>完整门厅超值解决方案</h3><br>
+                        <p>只需小小花费，针对不同生活阶段，宜家助你一套搞定。</p>
+                    </span>
+                    <a href="#"><button type="button" class="btn btn-lg btn-success active">点击发现更多</button></a>
+                </div>
+            </div>
+        </div>
+        <!-- 门厅超值特惠产品5 -->
+        <div class="container6 w" id="current_title5">
+            <div class="container_header">
+                <li class="container_h1 fl">
+                    <p><strong>门厅超值特惠产品</strong></p>
+                    <span>
+                        <p>虎年倒计时，想不想过一个“虎虎生威”的春节？</p>
+                        <p>一起来为新年布置做准备，无论回家过年还是就地过年， 宜家都能帮你打造年味儿十足的空间。</p>
+                    </span>
+                </li>
+                <li class="container_h2 fr">
+                    <a href="#">搜索更多推荐>></a>
+                </li>
+            </div>
+            <div class="container6_main w">
+                <div class="htmleaf-content">
+                    <div class="slider slider_one_big_2">
+                        <div>
+                            <img src="upload/600_400.png" alt="">
+                        </div>
+                        <div>
+                            <img src="upload/600_400.png" alt="">
+                        </div>
+                        <div>
+                            <img src="upload/600_400.png" alt="">
+                        </div>
+                        <div>
+                            <img src="upload/600_400.png" alt="">
+                        </div>
+                        <div>
+                            <img src="upload/600_400.png" alt="">
+                        </div>
+                        <div>
+                            <img src="upload/600_400.png" alt="">
+                        </div>
+                        <div>
+                            <img src="upload/600_400.png" alt="">
+                        </div>
+                        <div class="nav_indicators"></div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+        </div>
+        <!-- 门厅布置灵感和建议6 -->
+        <div class="container2 w" id="current_title6">
+            <div class="container_header">
+                <li class="container_h1 fl">
+                    <p><strong>门厅布置灵感和建议</strong></p>
+                    <span>
+                        <p>浏览并选购我们全新推出的产品！</p>
+                        <p>每一款产品都能契合不同房间和风格，带给你新的视觉亮点。</p>
+                    </span>
+                </li>
+                <li class="container_h2 fr">
+                    <a href="#">更多新品>></a>
+                </li>
+            </div>
+            <div class="container2_main w">
+                <ul>
+                    <!-- 第二层单元-1 -->
+                    <li id="container2_tab1">
+                        <div class="container2_main1 container2_main_w">
+                            <a href="#"><img src="#" alt=""></a>
+                            <a href=""><button type="button" class="btn btn-lg btn-success active">点击发现更多</button></a>
+                        </div>
+                        <div class="container2_main1 container2_main_w">
+                            <a href="#"><img src="#" alt=""></a>
+                            <a href=""><button type="button" class="btn btn-lg btn-success active">点击发现更多</button></a>
+                        </div>
+                        <div class="container2_main1 container2_main_w">
+                            <a href="#"><img src="#" alt=""></a>
+                            <a href=""><button type="button" class="btn btn-lg btn-success active">点击发现更多</button></a>
+                        </div>
+                    </li>
+                    <!-- 第二层单元-2 -->
+                    <li id="container2_tab2">
+                        <!-- 1200*600图片 -->
+                        <a href="#"><img src="upload//春节.png" alt="黄恒勇"></a>
+                    </li>
+                    <li id="container2_tab3">
+                        <ul>
+                            <li class="container2_tab3l fl">
+                                640*600图片
+                                <a href="#"><img src="" alt=""></a>
+                            </li>
+                            <li class="container2_tab3r fr">
+                                <div class="container2_tab3r1">
+                                    <a href="#"><img src="" alt=""></a>
+                                    550*200
+                                </div>
+                                <div class="container2_tab3r2">
+                                    <div>
+                                        <a href=""><img src="" alt=""></a>
+                                        263*280
+                                    </div>
+                                    <div><a href=""><img src="" alt=""></a>
+                                        263*380
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 第二层单元-3 -->
+                    <li id="container2_tab3">
+                        <a href="#"><img src="upload//春节.png" alt="黄恒勇"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- 底部的-回到顶部-快捷按钮 -->
+    <div class="back_top w">
+        <div class="back_top_btn">回到顶部</div>
+    </div>
+    <!-- 尾部服务导栏start -->
+    <div class="footer">
+        <div class="w">
+            <!-- 服务指南顶部footer_container -->
+            <div class="footer_container">
+                <ul class="footer_container_top">
+                    <li class="footer_container_top1 fl">
+                        <p>欢迎加入爱家俱乐部</p>
+                        <p>使用爱家俱乐部会员卡，享受折扣，灵感和许多美好事物，使你的想法栩栩如生。<a href="#">查看更多>></a></p>
+                        <a href="#">立即加入</a>
+                    </li>
+                    <li class="footer_container_top2 fr">
+                        <ul>
+                            <li>
+                                <dt class="footer_container_top2_dt"><strong>常用链接</strong></dt>
+                                <dd><a href="#">爱家商城App</a></dd>
+                                <dd><a href="#">本地商场</a></dd>
+                                <dd><a href="#">在线设计工具</a></dd>
+                                <dd><a href="#">爱家俱乐部</a></dd>
+                                <dd><a href="#">爱家对公业务</a></dd>
+                                <dd><a href="#">爱家附近美食</a></dd>
+                            </li>
+                            <li>
+                                <dt class="footer_container_top2_dt"><strong>客户服务</strong></dt>
+                                <dd><a href="#">客户服务</a></dd>
+                                <dd><a href="#">联系我们</a></dd>
+                                <dd><a href="#">网上商城配送范围</a></dd>
+                                <dd><a href="#">常见问题</a></dd>
+                                <dd><a href="#">退货政策</a></dd>
+                                <dd><a href="#">品质保证</a></dd>
+                            </li>
+                            <li>
+                                <dt class="footer_container_top2_dt"><strong>品质保证</strong></dt>
+                                <dd><a href="#">这就是爱家</a></dd>
+                                <dd><a href="#">自主设计</a></dd>
+                                <dd><a href="#">可持续的日常生活</a></dd>
+                                <dd><a href="#">社区参与</a></dd>
+                                <dd><a href="#">加入我们</a></dd>
+                                <dd><a href="#">意见反馈</a></dd>
+                            </li>
+                            <li>
+                                <dt class="footer_container_top2_dt"><strong>宜家新闻</strong></dt>
+                                <dd><a href="#">新闻联络</a></dd>
+                                <dd><a href="#">商品召回</a></dd>
+                                <dd><a href="#">牢牢固定！</a></dd>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- 服务指南顶部footer_container -->
+
+                <div class="footer_container_bottom">
+                    <div class="footer_container_bottom1 w">
+                        <ul class="login_item">
+                            <li><a href="" class="qq icomoon"><i></i></a></li>
+                            <li><a href="" class="wecat icomoon"><i></i></a></li>
+                            <li><a href="" class="weibo icomoon"><i></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="footer_container_bottom2">
+                        <div class="bottom2_l fl">
+                            <p>© Inter AIJIA Systems B.V. 2021-2022</p>
+                        </div>
+                        <div class="bottom2_r fr">
+                            <p>
+                                <a href="">隐私政策</a>
+                                <span>|</span>
+                                <a href="">缺陷披露政策</a>
+                                <span>|</span>
+                                <a href="">使用条款</a>
+                                <span>|</span>
+                                <a href="">福建工商</a>
+                                <span>|</span>
+                                <a href="">闽公网安备 3188901303号</a>
+                                <span>|</span>
+                                <a href="">闽ICP 备3188901303 号</a>
+                                <span>|</span>
+                                <a href="">Cookies设置</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部服务导栏end -->
+
+</body>
+<script src="{% static 'js/jquery.min.js' %}" type="text/javascript"></script>
+<script src="{% static 'js/list.js' %}"></script>
+<script src="{% static 'js/common.js' %}"></script>
+<!-- 轮播js -->
+<script src="{% static 'js/jquery.easy_slides.js' %}"></script>
+<!-- 回到顶部 -->
+<script src="{% static 'js/elevator.min.js' %}"></script>' %}
+<script src="{% static 'js/strip.pkgd.min.js' %}"></script>
+<script src="{% static 'js/animatescroll.min.js' %}"></script>
+
+</html>
